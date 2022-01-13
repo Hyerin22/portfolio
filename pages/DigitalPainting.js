@@ -66,7 +66,16 @@ const IntroHeader = styled.p`
   margin-left:0;
   padding-left:0;
 
-  
+  @media screen and (max-width: 480px) {
+    font-size: 32px;
+  }
+  @media (min-width: 481px) and (max-width: 834px){
+    font-size: 45px;
+    margin-top: 0;
+  }
+  @media screen and (min-width: 835px) {
+      font-size: 55px;
+  }
 `;
 const IntroSub = styled.p`
   font-family: 'M PLUS 1p', sans-serif;
@@ -77,13 +86,24 @@ const IntroSub = styled.p`
   margin-left:0;
   padding-left:0;
 
-  
+  @media screen and (max-width: 480px) {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  @media (min-width: 481px) and (max-width: 834px){
+    font-size: 25px;
+  }
+  @media screen and (min-width: 835px) {
+    font-size: 30px;
+  }
 `;
 
 const ContentCont = styled.div`
   margin-top: 70px;
 
-  
+  @media screen and (max-width: 480px) {
+    margin-top: 60px;
+  }
 
 `;
 const ImgCont = styled.div`
@@ -92,7 +112,14 @@ const ImgCont = styled.div`
   justify-content: center;
   align-items: center;
 
-  
+  @media screen and (max-width: 480px) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  @media (min-width: 481px) and (max-width: 1024px){ 
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 `;
 const BottContentCont = styled.div`
   display: flex;
@@ -121,7 +148,17 @@ const ProjTitle = styled.p`
   color: #4B4B4B;
   margin-bottom: 90px;
 
-  
+  @media screen and (max-width: 480px) {
+    font-size: 16px;
+    margin-top:0;
+  }
+  @media (min-width: 481px) and (max-width: 834px){
+    font-size: 18px;
+    margin-top:0;
+  }
+  @media screen and (min-width: 835px) {
+    font-size: 18px;
+  }
 `;
 
 

@@ -4,7 +4,21 @@ import {useRouter} from 'next/router';
 
 
 const Cont = styled.div`
-  
+  @media (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+    margin-bottom: 0;
+    justify-content: center;
+    margin-right: 7%;
+
+  }
+  @media (min-width: 481px) and (max-width: 834px){
+    display:none;
+  }
+  @media screen and (min-width: 835px) {
+    display:none;
+  }
 `;
 
 const NavCont = styled.button`

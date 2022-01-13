@@ -84,7 +84,12 @@ const Header = styled.p`
   color: #1E1B18;
   margin-bottom:0;
 
-  
+  @media screen and (max-width: 480px) {
+    font-size: 25px;
+  }
+  @media (min-width: 481px) and (max-width: 834px){
+    font-size: 25px;
+  }
 `;
 
 export default function Home() {

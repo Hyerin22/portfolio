@@ -44,7 +44,9 @@ const RightBar = styled.div`
     align-items:center;
     justify-content: flex-end;
 
-    
+    @media (max-width: 480px) {
+        display: none;
+    }
 `
 
 

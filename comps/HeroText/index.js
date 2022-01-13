@@ -7,7 +7,10 @@ const Cont = styled.div`
     margin-bottom:0
     width:100%;
 
-    
+    @media screen and (max-width: 480px) {
+        
+
+    }
 `;
 
 const Text = styled.p`
@@ -19,7 +22,15 @@ const Text = styled.p`
     margin-left:0;
     padding-left:0;
 
-    
+    @media screen and (max-width: 480px) {
+        font-size: 32px;
+    }
+    @media (min-width: 481px) and (max-width: 834px){
+        font-size: 32px;
+    }
+    @media screen and (min-width: 835px) {
+        font-size: 55px;
+    }
 `;
 
 const GifBio = styled.img`

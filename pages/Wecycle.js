@@ -87,13 +87,24 @@ const IntroSub = styled.p`
   margin-left:0;
   padding-left:0;
 
-  
+  @media screen and (max-width: 480px) {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  @media (min-width: 481px) and (max-width: 834px){
+    font-size: 30px;
+  }
+  @media screen and (min-width: 835px) {
+    font-size: 35px;
+  }
 `;
 
 const ContentCont = styled.div`
   margin-top: 70px;
 
-  
+  @media screen and (max-width: 480px) {
+    margin-top: 60px;
+  }
 
 `;
 const ImgCont = styled.div`

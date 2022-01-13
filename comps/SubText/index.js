@@ -16,7 +16,15 @@ const Text = styled.p`
   padding-right: 0px;
   line-height: 150%;
 
-  
+  @media screen and (max-width: 480px) {
+    font-size: 25px;
+  }
+  @media (min-width: 481px) and (max-width: 834px){
+    font-size: 35px;
+  }
+  @media screen and (min-width: 835px) {
+    font-size: 35px;
+  }
 `;
 
 

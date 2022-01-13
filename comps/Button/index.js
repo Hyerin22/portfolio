@@ -38,7 +38,15 @@ const Text = styled.p`
   margin-left: 1%;
   padding-left: 5%;
 
-  
+  @media screen and (max-width: 480px) {
+    font-size: 8px;
+  }
+  @media (min-width: 481px) and (max-width: 834px){
+    font-size: 16px;
+  }
+  @media screen and (min-width: 835px) {
+    font-size: 18px;
+  }
 `;
 
 

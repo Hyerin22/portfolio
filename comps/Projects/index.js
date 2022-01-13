@@ -32,7 +32,10 @@ const ProjDesc = styled.p`
     font-weight: 400;
     color: #4B4B4B;
 
-    
+    @media screen and (max-width: 480px) {
+        font-size: 16px;
+        margin-top: 0;
+    }
 `;
 
 
