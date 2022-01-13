@@ -1,0 +1,48 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.blueText{
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 55px;
+  font-weight: 800;
+  color: #2B6FC7;
+}
+
+.scale {
+  transition: transform .2s;
+}
+.scale:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+
+
+
+/* Layout */
+.grid {
+  display: grid;
+}
+
+.intro {
+  grid-area: ir;
+}
+.hero_img {
+  grid-area: hr;
+}
+
+
