@@ -43,7 +43,7 @@ const BodyText = ({
 })=>{
     
     return (
-        <Cont className="bodyTextMargin" marginL={marginL}>
+        <Cont marginL={marginL}>
           <Text
             className="bodyText"
             wspace={wspace}
