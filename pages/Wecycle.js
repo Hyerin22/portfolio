@@ -99,13 +99,14 @@ const IntroSub = styled.p`
   }
 `;
 
-const ContentCont = styled.div`
+const ContentCont = styled.div``;
+
+const SectionCont = styled.div`
   margin-top: 70px;
 
   @media screen and (max-width: 480px) {
     margin-top: 60px;
   }
-
 `;
 const ImgCont = styled.div`
   display: flex;
@@ -123,27 +124,31 @@ const BottContentCont = styled.div`
 const ContentContGrid = styled.div`
   justify-content: center;
   align-items: center;
-  margin-right: 8%;
 `;
 const RightCont = styled.div`
   justify-content: center;
   margin-left: 10%;
+  margin-top: 10px;
+
+  @media (max-width: 576px) {
+    margin-left: 20%;
+  }
 `;
 const LeftCont = styled.div`
   justify-content: center;
+  margin-left: -4%;
 `;
 const DesignImg = styled.img`
   max-width: 100%;
   height: auto;
-`;
-const WireframeImg = styled.img`
-  max-width: 80%;
-  height: auto; 
-`;
-const FinalImg = styled.img`
-  max-width: 85%;
-  height: auto;
 
+  @media (max-width: 576px) {
+    max-width: 90%;
+  }
+`;
+const ProjectImg = styled.img`
+  max-width: 85%;
+  height: auto; 
 `;
 
 
@@ -154,8 +159,7 @@ export default function Wecycle() {
   return (
     <Cont 
       initial={{opacity: 0}} 
-      animate={{opacity: 1, transition:{delay: 0.15}}}
-      className="center">
+      animate={{opacity: 1, transition:{delay: 0.15}}}>
       {/* TopNav */}
       <NavCont className="myLogo">
         <LogoCont onClick={() => router.push("/")}>
@@ -171,7 +175,7 @@ export default function Wecycle() {
           <HeroImg src="/wecycleProj.svg" />
         </HeroCont>
         
-        <IntroCont>
+        <IntroCont className='container'>
           <IntroHeader>WeCycle</IntroHeader>
           <IntroSub>Recycling Education App</IntroSub>
           <IntroBodyText 
@@ -216,56 +220,58 @@ export default function Wecycle() {
       </MainCont>
       
       {/* Content Start */}
-      <ContentCont>
-        <SubText text="Ideation" marginL="8%"/>
-        <BodyText 
-          marginL="8%"
-          text = "Our mission is to educate our users about the importance of recycling. We want to be the bridge between parents/teachers and children when it comes to an engaging and fun learning experience." 
-        />
+      <ContentCont className='container'>
+        <SectionCont>
+          <SubText text="Ideation" marginL="8%"/>
+          <BodyText 
+            marginL="8%"
+            text = "Our mission is to educate our users about the importance of recycling. We want to be the bridge between parents/teachers and children when it comes to an engaging and fun learning experience." 
+          />
+        </SectionCont>
+
+        <SectionCont>
+          <SubText text="Design" />
+          <ContentContGrid className="grid">
+            <LeftCont className='center bodyTextMargin'>
+              <BodyText 
+                marginL="20%"
+                text = "Our goal was to create a logo that reflects being sustainable as well as appealing to children. We felt that creating a youthful and eco-friendly logo by including the earth and recycling symbol."
+                marginB="30px"
+              />
+              <BodyText 
+                text = "We selected purple, yellow, and green as a colour palette. Through these intuitive colours, we tried to approach children more friendly. "
+                marginB="30px"
+                marginL="20%"
+              />
+              <BodyText 
+                text = "This way it would communicate our goals for our app, WeCycle."
+                marginB="30px"
+                marginL="20%"
+              />
+            </LeftCont>
+            
+            <RightCont>
+              <DesignImg src="wecycleDesign.svg" />
+            </RightCont>
+          </ContentContGrid>
+        </SectionCont>
+
+        <SectionCont>
+          <SubText text = "Wireframe" />
+          <ImgCont>
+            <ProjectImg src="wecycle_wireframe.svg" />
+          </ImgCont>
+        </SectionCont>
+
+        <BottContentCont>
+          <SubText text = "Final" />
+          <ImgCont>
+            <ProjectImg src="wecycleFinal.svg" />
+          </ImgCont>
+        </BottContentCont>
+
+        <Footer />
       </ContentCont>
-
-      <ContentCont>
-        <SubText text="Design" />
-        <ContentContGrid className="grid">
-          <LeftCont>
-            <BodyText 
-              marginL="20%"
-              text = "Our goal was to create a logo that reflects being sustainable as well as appealing to children. We felt that creating a youthful and eco-friendly logo by including the earth and recycling symbol."
-              marginB="30px"
-            />
-            <BodyText 
-              text = "We selected purple, yellow, and green as a colour palette. Through these intuitive colours, we tried to approach children more friendly. "
-              marginB="30px"
-              marginL="20%"
-            />
-            <BodyText 
-              text = "This way it would communicate our goals for our app, WeCycle."
-              marginB="30px"
-              marginL="20%"
-            />
-          </LeftCont>
-          
-          <RightCont>
-            <DesignImg src="wecycleDesign.svg" />
-          </RightCont>
-        </ContentContGrid>
-      </ContentCont>
-
-      <ContentCont>
-        <SubText text = "Wireframe" />
-        <ImgCont>
-          <WireframeImg src="wecycle_wireframe.svg" />
-        </ImgCont>
-      </ContentCont>
-
-      <BottContentCont>
-        <SubText text = "Final" />
-        <ImgCont>
-          <FinalImg src="wecycleFinal.svg" />
-        </ImgCont>
-      </BottContentCont>
-
-      <Footer />
     </Cont>
   )
 }

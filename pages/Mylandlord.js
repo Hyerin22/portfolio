@@ -216,7 +216,7 @@ export default function Wecycle() {
             marginB="0px"
           />
           <IntroBodyText
-            text="React, JavaScript, Next.js, GitHub, Figma"
+            text="React, JavaScript, Next.js, GitHub, Figma, AOS"
             paddingR="0px"
             marginB="15px"
           />
