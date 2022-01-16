@@ -105,7 +105,7 @@ export default function Graphics() {
           />
           <Projects
             routeTo='/HunterPoster'
-            src="/hunter.png" 
+            src="/hunter_2.png" 
             projName="Hunter Poster"
             projDesc="Advertising poster"
           />
