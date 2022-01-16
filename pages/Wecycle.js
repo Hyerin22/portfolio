@@ -124,6 +124,7 @@ const BottContentCont = styled.div`
 const ContentContGrid = styled.div`
   justify-content: center;
   align-items: center;
+  margin-right: 8%;
 `;
 const RightCont = styled.div`
   justify-content: center;
