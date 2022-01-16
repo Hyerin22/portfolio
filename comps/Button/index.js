@@ -18,12 +18,12 @@ const Cont = styled.button`
   margin-top: 45px;
   border: none;
 
-  @media screen and (max-width: 480px) {
-    width: 91px;
-    height: 27px;
+  @media (max-width: 480px) {
+    width: 135px;
+    height: 40px;
     margin-top: 10px;
   }
-  @media (min-width: 481px) and (max-width: 834px){
+  @media (min-width: 768px){
     margin-top: 20px;
     width: 155px;
     height: 45px;
@@ -38,13 +38,13 @@ const Text = styled.p`
   margin-left: 1%;
   padding-left: 5%;
 
-  @media screen and (max-width: 480px) {
-    font-size: 8px;
+  @media (max-width: 480px){
+    font-size: 14px;
   }
-  @media (min-width: 481px) and (max-width: 834px){
+  @media (min-width: 768px){
     font-size: 16px;
   }
-  @media screen and (min-width: 835px) {
+  @media (min-width: 992px){
     font-size: 18px;
   }
 `;

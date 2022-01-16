@@ -59,9 +59,8 @@ a {
 /* Responsive */
 
 /* Media Query for Mobile Devices */
-@media (max-width: 576px) {
+@media (max-width: 480px) {
   .container {
-    max-width: 560px;
     margin-left: auto;
     margin-right: auto;
   }

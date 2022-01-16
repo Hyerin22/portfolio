@@ -16,7 +16,7 @@ const Text = styled.p`
   padding-right: 0px;
   line-height: 150%;
 
-  @media (max-width: 576px){
+  @media (max-width: 480px){
     font-size: 25px;
   }
   @media (min-width: 768px){

@@ -19,7 +19,7 @@ const Cont = styled.div`
   padding-right: ${props=>props.paddingR};
   line-height: 150%;
 
-  @media (max-width: 576px){
+  @media (max-width: 480px){
     font-size: 16px;
   }
   @media (min-width: 768px){
