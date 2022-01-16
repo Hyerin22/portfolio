@@ -81,7 +81,7 @@ const IntroSub = styled.p`
 const ContentCont = styled.div``;
 
 const SectionCont = styled.div`
-  margin-top: 70px;
+  margin-top: 100px;
 
   @media screen and (max-width: 480px) {
     margin-top: 60px;
@@ -98,7 +98,7 @@ const BottContentCont = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 70px;
+  margin-top: 100px;
   margin-bottom: 30px;
 `;
 const ContentContGrid = styled.div`
@@ -209,6 +209,7 @@ export default function Wecycle() {
           <SubText text="Ideation" marginL="8%"/>
           <BodyText 
             marginL="8%"
+            marginB='0'
             text = "MyLandlords’ goal is to be able to help make it easier for residents in Greater Vancouver to find rent by looking for an ideal landlord. With our application, tenants and landlords will be able to communicate with each other and it will allow for tenants to leave honest reviews during their time with the landlord to help other prospective renters." 
           />
         </SectionCont>

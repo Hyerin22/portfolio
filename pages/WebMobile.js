@@ -97,9 +97,6 @@ export default function WebMobile() {
         {/* Projects here */}
         <ProjCont className="grid"> 
 
-        <Projects
-          routeTo = "/Wecycle"
-        />
 
         <Projects
           routeTo='/Mylandlord'
@@ -108,6 +105,16 @@ export default function WebMobile() {
           projDesc="Landlord Review Web Application"
         />
 
+        <Projects
+          routeTo='/BuddingWriters'
+          src="/buddingWriters.svg" 
+          projName="Budding Writers"
+          projDesc="Book Cafe Website"
+        />
+
+        <Projects
+          routeTo = "/Wecycle"
+        />
 
         <Projects />
 

@@ -131,21 +131,31 @@ export default function Home() {
         {/* Projects here */}
         <ProjCont className="grid"> 
           <Projects
-            routeTo = "/Wecycle" 
-          />
-
-          <Projects
             routeTo='/Mylandlord'
             src="/mylandlord.svg" 
             projName="MyLandlord"
             projDesc="Landlord Review Web Application"
-            />
+          />
+          
+
+          <Projects
+            routeTo='/BuddingWriters'
+            src="/buddingWriters.svg" 
+            projName="Budding Writers"
+            projDesc="Book Cafe Website"
+          />
+
           <Projects
             routeTo='/DigitalPainting'
             src="/painting.png" 
             projName="Anya Taylor-Joy"
             projDesc="Photograph Recreation Drawing"
-            />
+          />
+
+          <Projects
+            routeTo = "/Wecycle" 
+          />
+          
           
 
           <Projects />

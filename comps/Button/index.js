@@ -37,7 +37,7 @@ const Text = styled.p`
   font-weight: 400;
   color: #FFFFFF;
   margin-left: 1%;
-  padding-left: 5%;
+  padding-left: ${props=>props.paddingLeft};
 
   @media (max-width: 480px){
     font-size: 14px;
@@ -55,13 +55,15 @@ const Text = styled.p`
 
 
 const Button = ({
-  routeTo ="/"
+  routeTo ="/",
+  text="GitHub Link",
+  paddingLeft = "5%"
 })=>{
   const router = useRouter();
   return (
       <Cont className="scale" onClick = {() => router.push(routeTo)} >
         <FontAwesomeIcon className="gitHubIcon" icon={faGithub} size="2x" color="#FFFFFF"/>
-        <Text>GitHub Link</Text>
+        <Text paddingLeft={paddingLeft}>{text}</Text>
       </Cont>
   );
 }

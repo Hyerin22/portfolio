@@ -81,7 +81,7 @@ const IntroSub = styled.p`
 const ContentCont = styled.div``;
 
 const SectionCont = styled.div`
-  margin-top: 70px;
+  margin-top: 100px;
 
   @media screen and (max-width: 480px) {
     margin-top: 60px;
@@ -97,7 +97,7 @@ const BottContentCont = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 70px;
+  margin-top: 100px;
   margin-bottom: 30px;
 `;
 const ContentContGrid = styled.div`
@@ -204,6 +204,7 @@ export default function Wecycle() {
         <SectionCont>
           <SubText text="Ideation" marginL="8%"/>
           <BodyText 
+            marginB='0'
             marginL="8%"
             text = "Our mission is to educate our users about the importance of recycling. We want to be the bridge between parents/teachers and children when it comes to an engaging and fun learning experience." 
           />
