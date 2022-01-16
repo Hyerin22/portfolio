@@ -135,17 +135,18 @@ export default function Home() {
           />
 
           <Projects
+            routeTo='/Mylandlord'
+            src="/mylandlord.svg" 
+            projName="MyLandlord"
+            projDesc="Landlord Review Web Application"
+            />
+          <Projects
             routeTo='/DigitalPainting'
             src="/painting.png" 
             projName="Anya Taylor-Joy"
             projDesc="Photograph Recreation Drawing"
             />
-          <Projects
-            onClick={() => router.push("/")} 
-            src="/painting.svg" 
-            projName="Anya Taylor-Joy"
-            projDesc="Photograph Recreation Drawing"
-            />
+          
 
           <Projects />
 
