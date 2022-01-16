@@ -64,7 +64,7 @@ const Button = ({
 })=>{
   const router = useRouter();
   return (
-      <Cont className="scale" onClick = {() => router.push(routeTo)} >
+      <Cont className="scale button_scale" onClick = {() => router.push(routeTo)} >
         <FontAwesomeIcon className="gitHubIcon" icon={faGithub} size="2x" color="#FFFFFF"/>
         <Text paddingLeft={paddingLeft}>{text}</Text>
       </Cont>
