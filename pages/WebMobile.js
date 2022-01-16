@@ -112,11 +112,15 @@ export default function WebMobile() {
           projDesc="Book Cafe Website"
         />
 
-        <Projects
-          routeTo = "/Wecycle"
-        />
-
         <Projects />
+
+        <Projects
+          routeTo='/Natiive'
+          src="/natiive.svg" 
+          projName="Natiive"
+          projDesc="Indigenous Territory Education Web Applicatioin
+          "
+        />
 
         </ProjCont>
       </BottCont>
