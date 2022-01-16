@@ -98,7 +98,9 @@ const IntroSub = styled.p`
   }
 `;
 
-const ContentCont = styled.div`
+const ContentCont = styled.div``;
+
+const SectionCont = styled.div`
   margin-top: 70px;
 
   @media screen and (max-width: 480px) {
@@ -186,7 +188,7 @@ export default function DigitalPainting() {
           <HeroImg src="/paintingProj.svg" />
         </HeroCont>
         
-        <IntroCont>
+        <IntroCont className='container'>
           <IntroHeader>Anya Taylor-Joy</IntroHeader>
           <IntroSub>Photograph Recreation Drawing</IntroSub>
           <IntroBodyText 
@@ -230,52 +232,54 @@ export default function DigitalPainting() {
       </MainCont>
       
       {/* Content Start */}
-      <ContentCont>
-        <SubText text="Description" marginL="8%"/>
-        <BodyText 
-          marginL="8%"
-          marginB='0'
-          text = "The goal of this project was to draw a person in a photo in black and white using only Photoshop brush tools. Through this project, I was able to get used to brushes and blending mode tools."
-        />
+      <ContentCont className='container'>
+        <SectionCont>
+          <SubText text="Description" marginL="8%"/>
+          <BodyText 
+            marginL="8%"
+            marginB='0'
+            text = "The goal of this project was to draw a person in a photo in black and white using only Photoshop brush tools. Through this project, I was able to get used to brushes and blending mode tools."
+          />
+        </SectionCont>
+
+        <SectionCont>
+          <SubText text="Process" />
+          <ImgCont>
+            <PaintingImg src="OriginalPhoto.jpg" />
+            <ProjTitle>Original</ProjTitle>
+          </ImgCont>
+          <ContentContGrid className="grid">
+          <ImgCont>
+            <PaintingImg src="painting_S1.jpg" />
+            <ProjTitle>Step1: Base & Outline</ProjTitle>
+          </ImgCont>
+          <ImgCont>
+            <PaintingImg src="painting_S2.svg" />
+            <ProjTitle>Step2: Posterize painting</ProjTitle>
+          </ImgCont>
+          </ContentContGrid>
+          <ContentContGrid className="grid">
+          <ImgCont>
+            <PaintingImg src="painting_S3.svg" />
+            <ProjTitle>Step3: Blending</ProjTitle>
+          </ImgCont>
+          <ImgCont>
+            <PaintingImg src="painting_S4.svg" />
+            <ProjTitle>Step4: Hair & Watch Details</ProjTitle>
+          </ImgCont>
+          </ContentContGrid>
+        </SectionCont>
+
+        <BottContentCont>
+          <SubText text = "Final" />
+          <ImgCont>
+            <PaintingImg src="painting_Final.svg" />
+            <ProjTitle>Final Results</ProjTitle>
+          </ImgCont>
+        </BottContentCont>
+
+        <Footer />
       </ContentCont>
-
-      <ContentCont>
-        <SubText text="Process" />
-        <ImgCont>
-          <PaintingImg src="OriginalPhoto.jpg" />
-          <ProjTitle>Original</ProjTitle>
-        </ImgCont>
-        <ContentContGrid className="grid">
-        <ImgCont>
-          <PaintingImg src="painting_S1.jpg" />
-          <ProjTitle>Step1: Base & Outline</ProjTitle>
-        </ImgCont>
-        <ImgCont>
-          <PaintingImg src="painting_S2.svg" />
-          <ProjTitle>Step2: Posterize painting</ProjTitle>
-        </ImgCont>
-        </ContentContGrid>
-        <ContentContGrid className="grid">
-        <ImgCont>
-          <PaintingImg src="painting_S3.svg" />
-          <ProjTitle>Step3: Blending</ProjTitle>
-        </ImgCont>
-        <ImgCont>
-          <PaintingImg src="painting_S4.svg" />
-          <ProjTitle>Step4: Hair & Watch Details</ProjTitle>
-        </ImgCont>
-        </ContentContGrid>
-      </ContentCont>
-
-      <BottContentCont>
-        <SubText text = "Final" />
-        <ImgCont>
-          <PaintingImg src="painting_Final.svg" />
-          <ProjTitle>Final Results</ProjTitle>
-        </ImgCont>
-      </BottContentCont>
-
-      <Footer />
     </Cont>
   )
 }
