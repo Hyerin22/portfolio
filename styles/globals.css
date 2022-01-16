@@ -112,6 +112,14 @@ a {
     display: flex;
     justify-content: center;
   }
+
+  .intro_header {
+    font-size: 32px !important;
+  }
+  .intro_sub {
+    font-size: 18px !important;
+    font-weight: 600;
+  }
 }
 
  /* Media Query for Tablets */
@@ -136,6 +144,15 @@ a {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
+
+  .intro_header {
+    font-size: 35px !important;
+    margin-top: 0;
+  }
+  .intro_sub {
+    font-size: 23px !important;
+  }
+
 }
 
 /* Media Query for Laptops and Desktops */
@@ -161,6 +178,13 @@ a {
   }
   .grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .intro_header {
+    font-size: 55px !important;
+  }
+  .intro_sub {
+    font-size: 30px !important;
   }
 }
 @media (min-width: 1200px) {

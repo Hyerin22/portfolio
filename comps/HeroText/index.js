@@ -6,11 +6,6 @@ const Cont = styled.div`
     flex-direction: column;
     margin-bottom:0
     width:100%;
-
-    @media screen and (max-width: 480px) {
-        
-
-    }
 `;
 
 const Text = styled.p`
@@ -22,13 +17,13 @@ const Text = styled.p`
     margin-left:0;
     padding-left:0;
 
-    @media screen and (max-width: 480px) {
+    @media (max-width: 576px){
         font-size: 32px;
     }
-    @media (min-width: 481px) and (max-width: 834px){
+    @media (min-width: 768px){
         font-size: 32px;
     }
-    @media screen and (min-width: 835px) {
+    @media (min-width: 992px){
         font-size: 55px;
     }
 `;

@@ -67,16 +67,6 @@ const IntroHeader = styled.p`
   margin-left:0;
   padding-left:0;
 
-  @media screen and (max-width: 480px) {
-    font-size: 32px;
-  }
-  @media (min-width: 481px) and (max-width: 834px){
-    font-size: 55px;
-    margin-top: 0;
-  }
-  @media screen and (min-width: 835px) {
-    font-size: 55px;
-  }
 `;
 const IntroSub = styled.p`
   font-family: 'M PLUS 1p', sans-serif;
@@ -86,17 +76,6 @@ const IntroSub = styled.p`
   margin-bottom: 25px;
   margin-left:0;
   padding-left:0;
-
-  @media screen and (max-width: 480px) {
-    font-size: 18px;
-    font-weight: 600;
-  }
-  @media (min-width: 481px) and (max-width: 834px){
-    font-size: 30px;
-  }
-  @media screen and (min-width: 835px) {
-    font-size: 35px;
-  }
 `;
 
 const ContentCont = styled.div``;
@@ -181,8 +160,8 @@ export default function Wecycle() {
         </HeroCont>
         
         <IntroCont className='container'>
-          <IntroHeader>MyLandlord</IntroHeader>
-          <IntroSub>Landlord Review Web Application</IntroSub>
+          <IntroHeader className='intro_header'>MyLandlord</IntroHeader>
+          <IntroSub className='intro_sub'>Landlord Review Web Application</IntroSub>
           <IntroBodyText 
             text = "MyLandlord is a web application that is targeted towards residents looking to find an ideal Landlord to rent from in Greater Vancouver."
             marginB = "50px"

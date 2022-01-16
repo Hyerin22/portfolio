@@ -65,18 +65,8 @@ const IntroHeader = styled.p`
   margin-bottom: 10px;
   margin-left:0;
   padding-left:0;
-
-  @media screen and (max-width: 480px) {
-    font-size: 32px;
-  }
-  @media (min-width: 481px) and (max-width: 834px){
-    font-size: 45px;
-    margin-top: 0;
-  }
-  @media screen and (min-width: 835px) {
-      font-size: 55px;
-  }
 `;
+
 const IntroSub = styled.p`
   font-family: 'M PLUS 1p', sans-serif;
   font-size: 35px;
@@ -85,17 +75,6 @@ const IntroSub = styled.p`
   margin-bottom: 25px;
   margin-left:0;
   padding-left:0;
-
-  @media screen and (max-width: 480px) {
-    font-size: 18px;
-    font-weight: 600;
-  }
-  @media (min-width: 481px) and (max-width: 834px){
-    font-size: 25px;
-  }
-  @media screen and (min-width: 835px) {
-    font-size: 30px;
-  }
 `;
 
 const ContentCont = styled.div``;
@@ -189,8 +168,8 @@ export default function DigitalPainting() {
         </HeroCont>
         
         <IntroCont className='container'>
-          <IntroHeader>Anya Taylor-Joy</IntroHeader>
-          <IntroSub>Photograph Recreation Drawing</IntroSub>
+          <IntroHeader className='intro_header'>Anya Taylor-Joy</IntroHeader>
+          <IntroSub className='intro_sub'>Photograph Recreation Drawing</IntroSub>
           <IntroBodyText 
             text = "This is a digital painting using Photoshop."
             marginB = "50px"

@@ -16,13 +16,13 @@ const Text = styled.p`
   padding-right: ${props=>props.paddingR};
   line-height: 150%;
 
-  @media screen and (max-width: 480px) {
+  @media (max-width: 576px){
     font-size: 16px;
   }
-  @media (min-width: 481px) and (max-width: 834px){
+  @media (min-width: 768px){
     font-size: 16px;
   }
-  @media screen and (min-width: 835px) {
+  @media (min-width: 992px){
     font-size: 18px;
   }
 `;
