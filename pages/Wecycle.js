@@ -139,7 +139,7 @@ export default function Wecycle() {
   return (
     <Cont 
       initial={{opacity: 0}} 
-      animate={{opacity: 1, transition:{delay: 0.15}}}>
+      animate={{opacity: 1, transition:{delay: 0.25}}}>
       {/* TopNav */}
       <NavCont className="myLogo">
         <LogoCont onClick={() => router.push("/")}>

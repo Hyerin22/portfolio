@@ -17,6 +17,7 @@ const Cont = styled.button`
   height: 54px;
   margin-top: 45px;
   border: none;
+  cursor: pointer;
 
   @media (max-width: 480px) {
     width: 135px;
