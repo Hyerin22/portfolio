@@ -13,9 +13,7 @@ const Cont = styled.button`
   justify-content: center;
   background-color:#2B6FC7;
   border-radius: 35px;
-  width: 187px;
-  height: 54px;
-  margin-top: 45px;
+
   border: none;
   cursor: pointer;
 
@@ -28,6 +26,11 @@ const Cont = styled.button`
     margin-top: 20px;
     width: 155px;
     height: 45px;
+  }
+  @media (min-width: 992px) {
+    width: 167px;
+    height: 54px;
+    margin-top: 35px;
   }
 `;
 
