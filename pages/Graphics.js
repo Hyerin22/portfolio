@@ -103,6 +103,12 @@ export default function Graphics() {
             projName="Anya Taylor-Joy"
             projDesc="Photograph Recreation Drawing"
           />
+          <Projects
+            routeTo='/HunterPoster'
+            src="/hunter.png" 
+            projName="Hunter Poster"
+            projDesc="Advertising poster"
+          />
 
           <Projects
             onClick={() => router.push("/")} 
