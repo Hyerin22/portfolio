@@ -1,81 +1,188 @@
-import React, {useState} from 'react'
+import React from 'react'
 import styled from 'styled-components';
 import {useRouter} from 'next/router';
+import react, {useState} from 'react';
+
+const MenuCont = styled.div`
+  display: flex;
+  // justify-content: space-evenly;
+  flex-direction:column;
+  z-index: 1000;
+  position: relative;
+  // min-width: 320px;
+  max-width: 368px;
+  margin-right: 10%;
+  
+  
 
 
-const Cont = styled.div`
-  @media (max-width: 480px) {
-    display: flex;
-    flex-direction: column;
-    z-index: 999;
-    margin-bottom: 0;
-    justify-content: center;
-    margin-right: 7%;
+.MobPage:hover {
 
-  }
-  @media (min-width: 481px) and (max-width: 834px){
-    display:none;
-  }
-  @media screen and (min-width: 835px) {
-    display:none;
-  }
-`;
-
-const NavCont = styled.button`
-  background-color: white;
-  border: none;
-
-  .icon-bar {
-    display: block;
-    width: 35px;
-    border: none;
-    height: 3px;
-    background: #2B6FC7;
-    margin-bottom: 4px;
-    transition: all 400ms linear;
-    cursor: pointer;
-  }
-
-
-
-
-
-`;
-
-const Hamburger = ({
-})=>{
-  const router = useRouter();
-
-  const [NavOpen, setNavOpen] = useState(false);
-  var width = 0;
-  var height = 0;
-
-
-  if(NavOpen){
-    width = 100;
-    height = 1000;
-
-    // .navbar_toggle span:first-child {
-    //     transform: rotate(-45deg);
-    //     position: relative;
-    //     top: 7.5px;
-    // }
-    // .navbar-toggler span:last-child {
-    //     transform: rotate(45deg);
-    //     bottom: 6px;
-    //     position: relative;
-    // }
-  }
-
-  return (
-    <Cont >
-      <NavCont className="navbar_toggle" onClick={()=>setNavOpen(!NavOpen)}>
-        <span className="icon-bar"></span>
-        <span className="icon-bar"></span>
-        <span className="icon-bar"></span>
-      </NavCont>
-    </Cont>
-  );
+  // background-color:#5769DF;
+  // color:white;
 }
 
-export default Hamburger;
+`;
+
+const Menuholder = styled.label`
+  z-index: 2000;
+
+  position: relative;
+  // top: 0;
+  // right: 1000;
+
+  top: ${props=>props.top};
+  left: ${props=>props.left};
+`;
+
+const Contholder = styled.div`
+  display:flex;
+  flex-direction:column;
+  background-color:white;
+  border-radius: 0px 0px 20px 20px;
+  box-shadow: 3px 18px 50px -21px rgba(0,0,0,0.48);
+  // width: ${props=>props.width};
+  // height: ${props=>props.height};
+
+  width: 100%;
+  min-width: 240px;
+  // right: 100;
+  height: 100vh;
+  opacity: ${props=>props.opacity};
+  zIndex: ${props=>props.zIndex};
+  overflow:hidden;
+  transition: max-width 0s, max-height 1s;
+  top:0;
+  left: 0;
+  position: fixed;
+
+
+`;
+
+
+
+// const Title = styled.h3 `
+//   font-size: 30px;
+//   color: #393939;
+//   letter-spacing: 0.07em;
+// `;
+
+// const HomeButton = styled.img`
+//   display: ${props=>props.homebutton};
+// `;
+
+
+const PageHolder = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 100px 15px 0 15px;
+`;
+
+
+const Page = styled.a`
+  padding:20px;
+  text-decoration: none;
+  background-color: transparent;
+  font-size: 18px;
+  display: block;
+  positoin: relative
+
+  :before{
+    content : "";
+    position: absolute;
+    background-color: #2B6FC7;
+    height: 2px;
+    width : 100%;
+    bottom: -5px; 
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .2s width ease;
+    box-sizing: border-box;
+}
+  :hover {
+    color: #2B6FC7;
+    width: 100%;
+  }
+
+  :hover:before {    
+    width: 100%;
+  }
+
+  :active {
+    color: #2B6FC7;
+  }
+  :active:before {    
+    width: 100%;    
+  }
+`;
+
+
+const LogoCont =styled.div`
+  display:flex;
+  flex-direction: row;
+  flex: 1;
+  align-items:center;
+  justify-content:space-between;
+  cursor: pointer;
+  max-width: 85px;
+  height: auto;
+`
+
+const Logo = styled.img`
+  width: 68px;
+  cursor: pointer;
+  padding: 30px 0px 0 20px;
+`;
+
+const Menu = ({
+
+}) =>{
+
+// ============for categories===============
+    const [open, setOpen] = useState(false);
+
+    // var width = "100vw";
+    // var height = "0";
+    var zIndex = 0;
+    
+    var top = "40px";
+    var left = "0px";
+    var opacity = "0"
+    
+    if(open){
+      // var width = "100vw";
+      // var height = "100vh";
+      var zIndex = 100;
+
+      var top = "40px"
+      var left = "0px"
+      var opacity ="1"
+    }
+
+    const router = useRouter();
+    
+    return (
+    <MenuCont>
+      <Menuholder top={top} left={left}>
+          <input type="checkbox" onClick={()=>setOpen(!open)}/> 
+          <span></span>
+          <span></span>
+          <span></span>
+      </Menuholder>
+
+        <Contholder zIndex={zIndex} opacity={opacity}> 
+          {/* <LogoCont onClick={() => router.push("/")}> */}
+            <Logo src="/Logo.svg" onClick={() => router.push("/")} />
+          {/* </LogoCont> */}
+            <PageHolder className="MobPage">
+              <Page onClick={()=>router.push('/')} className="region" >HOME</Page>
+              <Page className="region" onClick={()=>router.push('/WebMobile')} >WEB/MOBILE APP</Page>
+              <Page onClick={()=>router.push('/Graphics')} className="region" >GRAPHIC DESIGN</Page>
+              <Page onClick={()=>router.push('/About')} className="region" >ABOUT ME</Page>
+            </PageHolder>
+        </Contholder>
+    </MenuCont>
+    )
+}
+
+export default Menu;

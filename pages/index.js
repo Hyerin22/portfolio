@@ -23,6 +23,7 @@ const NavCont = styled.div`
   box-sizing: border-box;
   flex-direction: row;
   box-sizing: border-box;
+  position: relative;
 `;
 
 const LogoCont =styled.div`
