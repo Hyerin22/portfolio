@@ -12,14 +12,15 @@ const MenuCont = styled.div`
   // min-width: 320px;
   max-width: 368px;
   margin-right: 10%;
-  
-  
-
 
 .MobPage:hover {
 
   // background-color:#5769DF;
   // color:white;
+}
+
+@media (min-width: 481px) {
+  display: none;
 }
 
 `;
