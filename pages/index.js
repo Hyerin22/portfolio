@@ -129,10 +129,10 @@ export default function Home() {
           
 
           <Projects
-            routeTo='/BuddingWriters'
-            src="/buddingWriters.svg" 
-            projName="Budding Writers"
-            projDesc="Book Cafe Website"
+            routeTo='/Epub'
+            src="/ePub.svg" 
+            projName="Let&#39;s Save A Life!"
+            projDesc="InDesign E-publication"
           />
 
           <Projects
@@ -141,7 +141,11 @@ export default function Home() {
             projName="Anya Taylor-Joy"
             projDesc="Photograph Recreation Drawing"
           />
-          <Projects />
+
+          <Projects
+            routeTo='/Wecycle'
+          />
+
         </ProjCont>
       </BottCont>
       <Footer />

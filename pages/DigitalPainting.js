@@ -168,8 +168,8 @@ export default function DigitalPainting() {
         </HeroCont>
         
         <IntroCont className='container'>
-          <IntroHeader className='intro_header'>Anya Taylor-Joy</IntroHeader>
-          <IntroSub className='intro_sub'>Photograph Recreation Drawing</IntroSub>
+          <IntroHeader className='intro_header'>Photograph Recreation Drawing</IntroHeader>
+          <IntroSub className='intro_sub'>Anya Taylor-Joy</IntroSub>
           <IntroBodyText 
             text = "This is a digital painting using Photoshop."
             marginB = "50px"
@@ -225,7 +225,7 @@ export default function DigitalPainting() {
           <SubText text="Process" />
           <ImgCont>
             <PaintingImg src="OriginalPhoto.jpg" />
-            <ProjTitle>Original</ProjTitle>
+            <ProjTitle>Original Photo</ProjTitle>
           </ImgCont>
           <ContentContGrid className="grid">
           <ImgCont>
@@ -253,7 +253,7 @@ export default function DigitalPainting() {
           <SubText text = "Final" />
           <ImgCont>
             <PaintingImg src="painting_Final.svg" />
-            <ProjTitle>Final Results</ProjTitle>
+            <ProjTitle>Final Result</ProjTitle>
           </ImgCont>
         </BottContentCont>
 
