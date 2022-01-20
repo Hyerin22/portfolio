@@ -88,34 +88,26 @@ const Page = styled.a`
   display: block;
   positoin: relative;
   color: #1E1B18;
-
-  :before{
-    content : "";
-    position: absolute;
-    background-color: #2B6FC7;
-    height: 2px;
-    width : 100%;
-    bottom: -5px; 
-    left: 50%;
-    transform: translateX(-50%);
-    transition: .2s width ease;
-    box-sizing: border-box;
 }
   :hover {
     color: #2B6FC7;
     width: 100%;
   }
 
+  .active {
+    color: #2B6FC7;
+  }
+
   :hover:before {    
     width: 100%;
   }
 
-  :active {
-    color: #2B6FC7;
-  }
-  :active:before {    
-    width: 100%;    
-  }
+  // :active {
+  //   color: #2B6FC7;
+  // }
+  // :active:before {    
+  //   width: 100%;    
+  // }
 `;
 
 
@@ -177,7 +169,10 @@ const Menu = ({
             <Logo src="/Logo.svg" onClick={() => router.push("/")} />
           {/* </LogoCont> */}
             <PageHolder className="MobPage">
-              <Page onClick={()=>router.push('/')} className="region" >HOME</Page>
+              <Page 
+                onClick={()=>router.push('/')} 
+                className={router.pathname == "/" ? "active" : ""}
+                >HOME</Page>
               <Page className="region" onClick={()=>router.push('/WebMobile')} >WEB/MOBILE APP</Page>
               <Page onClick={()=>router.push('/Graphics')} className="region" >GRAPHIC DESIGN</Page>
               <Page onClick={()=>router.push('/About')} className="region" >ABOUT</Page>

@@ -3,6 +3,9 @@ import styled from 'styled-components';
 import {useRouter} from 'next/router';
 
 import NavPage from '../NavPage';
+import NavMob from '../NavMob';
+import NavDesign from '../NavDesign';
+import NavAbout from '../NavAbout';
 
 const Cont = styled.div`
     width: 100%;
@@ -27,17 +30,6 @@ const NavCont = styled.div`
     
 `
 
-// const LeftBar =styled.div`
-//     display:flex;
-//     flex-direction: row;
-//     flex: 1;
-//     align-items:center;
-//     justify-content:space-between;
-// `
-// const Logo = styled.img`
-//     width:auto;
-// `;
-
 const RightBar = styled.div`
     display:flex;
     flex: 1.5;
@@ -49,15 +41,6 @@ const RightBar = styled.div`
     }
 `
 
-const DownloadNav = styled.a`
-    download
-    font-family: 'M PLUS 1p', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    position: relative;
-    color: #1E1B18;
-`;
-
 
 const Nav = ({
     marginB = 0,
@@ -68,9 +51,9 @@ const Nav = ({
         <Cont marginB={marginB}>
             <NavCont>
                 <RightBar>
-                    <NavPage text="WEB/MOBILE APP" routeTo="/WebMobile"/>
-                    <NavPage routeTo="/Graphics" />
-                    <NavPage text="ABOUT" routeTo="/About"/>
+                    <NavMob />
+                    <NavDesign />
+                    <NavAbout />
                     <a className="resume" href='/hyerin-resume.pdf' download>RESUME</a>
                 </RightBar>
             </NavCont>
