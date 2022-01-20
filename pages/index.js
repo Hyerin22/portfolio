@@ -141,15 +141,7 @@ export default function Home() {
             projName="Anya Taylor-Joy"
             projDesc="Photograph Recreation Drawing"
           />
-
-          <Projects
-            routeTo = "/Wecycle" 
-          />
-          
-          
-
           <Projects />
-
         </ProjCont>
       </BottCont>
       <Footer />

@@ -99,12 +99,6 @@ export default function Graphics() {
             projDesc="Advertising poster"
           />
 
-          <Projects
-            onClick={() => router.push("/")} 
-          />
-
-          <Projects />
-
         </ProjCont>
       </BottCont>
       <Footer />

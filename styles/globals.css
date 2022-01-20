@@ -79,7 +79,7 @@ a {
   color: #1E1B18;
   position: relative;
 }
-
+/* 
 .resume::after {
   content: '';
   position: absolute;
@@ -94,7 +94,7 @@ a {
 
 .resume:hover::after,
 .resume:focus::after {
-  opacity: 1;
+  color: #2B6FC7;
   transform: translate3d(0, 0.2em, 0);
 }
 
@@ -107,7 +107,7 @@ a {
 .resume:hover::after,
 .resume:focus::after{
   transform: scale(1);
-}
+} */
 
 .resume:hover {
   color: #2B6FC7;
@@ -306,17 +306,17 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
     padding: 20px;
   }
 
-  .resume::after {
+  /* .resume::after {
     content: '';
     position: absolute;
     bottom: 10px;
     left: 20px;
     width: 20%;
     height: 1.5px;
-    background-color: #2B6FC7;
+    background-color: #fff;
     opacity: 0;
     transition: opacity 300ms, transform 300ms;
-  }
+  } */
 }
 
  /* Media Query for Tablets */

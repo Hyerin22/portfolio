@@ -63,7 +63,6 @@ const NavDesign =({
         onClick={() => router.push("/Design")} 
       >
         <PageName 
-          className="NavPage"
           beforeWidth="100%"
           >GRAPHIC DESIGN</PageName>
       </Cont>
@@ -76,7 +75,6 @@ const NavDesign =({
       onClick={() => router.push("/Design")} 
     >
       <PageName 
-        className="NavPage"
         beforeWidth={beforeWidth}
         >GRAPHIC DESIGN</PageName>
     </Cont>

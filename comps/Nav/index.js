@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import {useRouter} from 'next/router';
 
 import NavPage from '../NavPage';
-import NavMob from '../NavMob';
+import NavWeb from '../NavWeb';
 import NavDesign from '../NavDesign';
 import NavAbout from '../NavAbout';
 
@@ -42,6 +42,7 @@ const RightBar = styled.div`
 `
 
 
+
 const Nav = ({
     marginB = 0,
 })=>{
@@ -51,7 +52,7 @@ const Nav = ({
         <Cont marginB={marginB}>
             <NavCont>
                 <RightBar>
-                    <NavMob />
+                    <NavWeb />
                     <NavDesign />
                     <NavAbout />
                     <a className="resume" href='/hyerin-resume.pdf' download>RESUME</a>

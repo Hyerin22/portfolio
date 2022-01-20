@@ -48,7 +48,7 @@ const PageName = styled.a`
   }
 `
 
-const NavMob =({
+const NavWeb =({
   mright = "5%",
   beforeWidth="0%"
 
@@ -63,7 +63,6 @@ const NavMob =({
         onClick={() => router.push("/WebMobile")} 
       >
         <PageName 
-          className="NavPage"
           beforeWidth="100%"
           >WEB/MOBILE APP</PageName>
       </Cont>
@@ -76,11 +75,10 @@ const NavMob =({
       onClick={() => router.push("/WebMobile")} 
     >
       <PageName 
-        className="NavPage"
         beforeWidth={beforeWidth}
         >WEB/MOBILE APP</PageName>
     </Cont>
   );
 }
 
-export default NavMob;
+export default NavWeb;

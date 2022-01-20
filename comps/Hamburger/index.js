@@ -5,19 +5,11 @@ import react, {useState} from 'react';
 
 const MenuCont = styled.div`
   display: flex;
-  // justify-content: space-evenly;
   flex-direction:column;
   z-index: 1000;
   position: relative;
-  // min-width: 320px;
   max-width: 368px;
   margin-right: 10%;
-
-.MobPage:hover {
-
-  // background-color:#5769DF;
-  // color:white;
-}
 
 @media (min-width: 481px) {
   display: none;
@@ -29,8 +21,6 @@ const Menuholder = styled.label`
   z-index: 2000;
 
   position: relative;
-  // top: 0;
-  // right: 1000;
 
   top: ${props=>props.top};
   left: ${props=>props.left};
@@ -42,12 +32,9 @@ const Contholder = styled.div`
   background-color:white;
   border-radius: 0px 0px 20px 20px;
   box-shadow: 3px 18px 50px -21px rgba(0,0,0,0.48);
-  // width: ${props=>props.width};
-  // height: ${props=>props.height};
 
   width: 100%;
   min-width: 240px;
-  // right: 100;
   height: 100vh;
   opacity: ${props=>props.opacity};
   zIndex: ${props=>props.zIndex};
@@ -56,22 +43,7 @@ const Contholder = styled.div`
   top:0;
   left: 0;
   position: fixed;
-
-
 `;
-
-
-
-// const Title = styled.h3 `
-//   font-size: 30px;
-//   color: #393939;
-//   letter-spacing: 0.07em;
-// `;
-
-// const HomeButton = styled.img`
-//   display: ${props=>props.homebutton};
-// `;
-
 
 const PageHolder = styled.div`
   display: flex;
@@ -88,26 +60,11 @@ const Page = styled.a`
   display: block;
   positoin: relative;
   color: #1E1B18;
-}
-  :hover {
-    color: #2B6FC7;
-    width: 100%;
-  }
 
-  .active {
+  :hover{
     color: #2B6FC7;
   }
 
-  :hover:before {    
-    width: 100%;
-  }
-
-  // :active {
-  //   color: #2B6FC7;
-  // }
-  // :active:before {    
-  //   width: 100%;    
-  // }
 `;
 
 
@@ -173,8 +130,8 @@ const Menu = ({
                 onClick={()=>router.push('/')} 
                 className={router.pathname == "/" ? "active" : ""}
                 >HOME</Page>
-              <Page className="region" onClick={()=>router.push('/WebMobile')} >WEB/MOBILE APP</Page>
-              <Page onClick={()=>router.push('/Graphics')} className="region" >GRAPHIC DESIGN</Page>
+              <Page onClick={()=>router.push('/WebMobile')} >WEB/MOBILE APP</Page>
+              <Page onClick={()=>router.push('/Design')} className="region" >GRAPHIC DESIGN</Page>
               <Page onClick={()=>router.push('/About')} className="region" >ABOUT</Page>
               <a className="resume" href='/hyerin-resume.pdf' download>RESUME</a>
             </PageHolder>
