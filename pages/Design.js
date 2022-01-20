@@ -98,6 +98,12 @@ export default function Graphics() {
             projName="Hunter Poster"
             projDesc="Advertising poster"
           />
+          <Projects
+            routeTo='/Epub'
+            src="/ePub.svg" 
+            projName="Let’s Save A Life!"
+            projDesc="InDesign E-publication"
+          />
 
         </ProjCont>
       </BottCont>

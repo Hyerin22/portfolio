@@ -36,7 +36,8 @@ const Contholder = styled.div`
   width: 100%;
   min-width: 240px;
   height: 100vh;
-  opacity: ${props=>props.opacity};
+  display: ${props=>props.display};
+  
   zIndex: ${props=>props.zIndex};
   overflow:hidden;
   transition: max-width 0s, max-height 1s;
@@ -94,11 +95,12 @@ const Menu = ({
 
     // var width = "100vw";
     // var height = "0";
-    var zIndex = 0;
+    var zIndex = -1000;
     
     var top = "40px";
     var left = "0px";
-    var opacity = "0"
+    // var opacity = "0"
+    var display = "none";
     
     if(open){
       // var width = "100vw";
@@ -107,7 +109,8 @@ const Menu = ({
 
       var top = "40px"
       var left = "0px"
-      var opacity ="1"
+      // var opacity ="1"
+      var display = "block";
     }
 
     const router = useRouter();
@@ -121,7 +124,7 @@ const Menu = ({
           <span></span>
       </Menuholder>
 
-        <Contholder zIndex={zIndex} opacity={opacity}> 
+        <Contholder zIndex={zIndex} display={display}> 
           {/* <LogoCont onClick={() => router.push("/")}> */}
             <Logo src="/Logo.svg" onClick={() => router.push("/")} />
           {/* </LogoCont> */}

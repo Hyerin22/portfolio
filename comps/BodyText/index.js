@@ -24,6 +24,7 @@ line-height: 150%;
 }
 @media (min-width: 768px){
   font-size: 16px;
+  padding-right: 0px;
 }
 @media (min-width: 992px){
   font-size: 18px;

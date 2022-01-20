@@ -94,14 +94,14 @@ export default function WebMobile() {
         />
 
         <Projects
+          routeTo='/Wecycle'
+        />
+        
+        <Projects
           routeTo='/BuddingWriters'
           src="/buddingWriters.svg" 
           projName="Budding Writers"
           projDesc="Book Cafe Website"
-        />
-
-        <Projects
-          routeTo='/Wecycle'
         />
 
         <Projects
