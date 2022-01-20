@@ -49,6 +49,15 @@ const RightBar = styled.div`
     }
 `
 
+const DownloadNav = styled.a`
+    download
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+    color: #1E1B18;
+`;
+
 
 const Nav = ({
     marginB = 0,
@@ -59,9 +68,10 @@ const Nav = ({
         <Cont marginB={marginB}>
             <NavCont>
                 <RightBar>
-                    <NavPage text="WEB/MOBILE APP" onc routeTo="/WebMobile"/>
+                    <NavPage text="WEB/MOBILE APP" routeTo="/WebMobile"/>
                     <NavPage routeTo="/Graphics" />
-                    <NavPage text="ABOUT ME" mright="0" routeTo="/About"/>
+                    <NavPage text="ABOUT" routeTo="/About"/>
+                    <a className="resume" href='/hyerin-resume.pdf' download>RESUME</a>
                 </RightBar>
             </NavCont>
         </Cont>

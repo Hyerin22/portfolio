@@ -86,7 +86,8 @@ const Page = styled.a`
   background-color: transparent;
   font-size: 18px;
   display: block;
-  positoin: relative
+  positoin: relative;
+  color: #1E1B18;
 
   :before{
     content : "";
@@ -179,7 +180,8 @@ const Menu = ({
               <Page onClick={()=>router.push('/')} className="region" >HOME</Page>
               <Page className="region" onClick={()=>router.push('/WebMobile')} >WEB/MOBILE APP</Page>
               <Page onClick={()=>router.push('/Graphics')} className="region" >GRAPHIC DESIGN</Page>
-              <Page onClick={()=>router.push('/About')} className="region" >ABOUT ME</Page>
+              <Page onClick={()=>router.push('/About')} className="region" >ABOUT</Page>
+              <a className="resume" href='/hyerin-resume.pdf' download>RESUME</a>
             </PageHolder>
         </Contholder>
     </MenuCont>

@@ -26,7 +26,8 @@ const PageName = styled.a`
         height: 1.5px;
         // width : 0;
         width : ${props=>props.beforeWidth};
-        bottom: -5px; left: 50%;
+        bottom: -5px; 
+        left: 50%;
         transition: 0.5s; 
         transform: translateX(-50%);
     }
