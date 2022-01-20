@@ -3,10 +3,15 @@ import styled from 'styled-components';
 import {useRouter} from 'next/router';
 import { motion } from "framer-motion";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faCode, faEnvelope, faEnvelopeOpen, faEnvelopeSquare, faPenNib } from '@fortawesome/free-solid-svg-icons';
+
 import Nav from '../comps/Nav';
 import Hamburger from '../comps/Hamburger';
-import Projects from '../comps/Projects';
+import BodyText from '../comps/BodyText';
 import Footer from '../comps/Footer';
+import Header from '../comps/Header';
 
 const Cont = styled(motion.div)`
   display:flex;
@@ -40,8 +45,70 @@ const HeroCont = styled.div`
   justify-content: center;
 
 `; 
+
 const HeroImg = styled.img`
+  
 `;
+
+const ContentCont = styled.div`
+  margin-top: 100px;
+  
+  @media screen and (max-width: 480px) {
+    margin-top: 30px;
+  }
+  @media (min-width: 481px) and (max-width: 991px) {
+    margin-top: 40px;
+  }
+`;
+
+const SectionCont = styled.div`
+  margin-top: 70px;
+  justify-content: center;
+  align-items: center;
+`;
+
+const ContentContGrid = styled.div`
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+`;
+
+const ImgCont = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 480px) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  @media (min-width: 481px) and (max-width: 1024px){ 
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+`;
+
+const ProfileImg = styled.img`
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+`;
+
+const RightCont = styled.div`
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 480px) {
+    font-size: 25px;
+  }
+  @media (max-width: 834px){
+    text-align: center;
+  }
+`;
+
 
 
 
@@ -69,7 +136,34 @@ export default function About() {
       </HeroCont>
 
       {/* Contents */}
-      
+      <ContentCont className='container'>
+        {/* profile */}
+        <SectionCont>
+          <ContentContGrid className='about_prof_grid container'>
+            <ImgCont>
+              <ProfileImg src='rin_profile.svg' />
+            </ImgCont>
+            <RightCont>
+              <Header
+              marginB='40px'
+              marginT='70px'
+              text='Hello I’m Hyerin!' />
+              <BodyText
+              paddingR='0'
+              marginB='30px'
+              text="I’m a Digital Design & Development student at BCIT who is an aspiring Front-End Developer with design knowledge."/>
+              <BodyText
+              paddingR='0'
+              marginB='30px'
+              text="My goal is to improve the user's experience through coding and design. I believe that the task of a developer is to provide users with the best possible experience with good code."/>
+              <BodyText 
+              paddingR='0'
+              marginB='30px'
+              text="I enjoy spending time with people, playing the piano and taking part in outdoor activities. If you want to know more about me, feel free to send me an email! "/>
+            </RightCont>
+          </ContentContGrid>
+        </SectionCont>
+      </ContentCont>
       <Footer />
     </Cont>
   )     

@@ -59,8 +59,8 @@ const Nav = ({
         <Cont marginB={marginB}>
             <NavCont>
                 <RightBar>
+                    <NavPage text="WEB/MOBILE APP" onc routeTo="/WebMobile"/>
                     <NavPage routeTo="/Graphics" />
-                    <NavPage text="WEB/MOBILE APP" routeTo="/WebMobile"/>
                     <NavPage text="ABOUT ME" mright="0" routeTo="/About"/>
                 </RightBar>
             </NavCont>

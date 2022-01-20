@@ -2,6 +2,10 @@ import React from 'react'
 import styled from 'styled-components';
 import {useRouter} from 'next/router';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faCode, faEnvelope, faEnvelopeOpen, faEnvelopeSquare, faPenNib } from '@fortawesome/free-solid-svg-icons';
+
 const Cont = styled.div`
     display:flex;
     flex-direction: column;
@@ -15,13 +19,14 @@ const Logo = styled.img`
     cursor: pointer;
 `;
 const SnsIconCont = styled.div`
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 `;
 const SnsLink = styled.a`
-    margin-left: 70px;
-    margin-right: 72px;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 32px;
+    font-size: 18px;
 `;
 const SnsIcon = styled.img`
 
@@ -38,8 +43,8 @@ const FooterText = styled.p`
 
 const PolicyCont = styled.div`
     display: flex;
+    flex-direction: row;
     margin-top:15px;
-    justify-content: space-between;
     align-items: center;
 `;
 
@@ -50,7 +55,7 @@ const FooterPolicy = styled.a`
     color: #1E1B18;
 `;
 
-const VerLine = styled.span`
+const VerLine = styled.div`
     display: inline-block;
     border-left: 1px solid #2B6FC7;
     margin: 0 10px;
@@ -69,10 +74,13 @@ const Footer = ({
             <Logo src="/Logo.svg" onClick={() => router.push("/")}/>
             <SnsIconCont>
                 <SnsLink target="_blank" href="https://www.linkedin.com/in/hyerin-cheon/">
-                    <SnsIcon src="/linkedin.svg"/>
+                    <FontAwesomeIcon className="LinkedIn icons" icon={faLinkedinIn} size="lg" color="#2E3A59"/>
                 </SnsLink>
                 <SnsLink href="mailto:hlyni22@gmail.com">
-                    <SnsIcon src="/email.svg"/>
+                    <FontAwesomeIcon className="email icons" icon={faEnvelope} size="lg" color="#2E3A59"/>
+                </SnsLink>
+                <SnsLink href="https://github.com/Hyerin22">
+                    <FontAwesomeIcon className="gitHubIcon icons" icon={faGithub} size="lg" color="#2E3A59"/>
                 </SnsLink>
             </SnsIconCont>
             <FooterText>© Hyerin Cheon Portfolio 2022</FooterText>

@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 
 const Cont = styled.div`
-  margin-left: ${props=>props.marginL};
+
 `;
 
 const Text = styled.p`
@@ -10,17 +10,14 @@ const Text = styled.p`
   font-size: 35px;
   font-weight: 400;
   color: ${props=>props.fcolor};
-  margin-top: ${props=>props.marginT};
   margin-bottom: ${props=>props.marginB};
-  padding-left: 0px;
-  padding-right: 0px;
-  line-height: 150%;
+  margin-top: ${props=>props.marginT};
 
   @media (max-width: 480px){
     font-size: 25px;
   }
   @media (min-width: 768px){
-    font-size: 35px;
+    font-size: 25px;
   }
   @media (min-width: 992px){
     font-size: 35px;
@@ -28,18 +25,16 @@ const Text = styled.p`
 `;
 
 
+const Header = ({
+  fcolor = "#1E1B18",
+  marginB = "0",
+  text = "header",
+  marginT = "0"
 
-
-const SubText = ({
-  fcolor="#1E1B18",
-  marginB ="35px",
-  text="Subhead",
-  marginL = "8%",
-  marginT ="0"
 })=>{
-    
+
     return (
-        <Cont marginL ={marginL} >
+        <Cont>
           <Text
             fcolor={fcolor}
             marginB={marginB}
@@ -49,4 +44,4 @@ const SubText = ({
     );
 }
 
-export default SubText;
+export default Header;

@@ -7,6 +7,7 @@ import Nav from '../comps/Nav';
 import Hamburger from '../comps/Hamburger';
 import Projects from '../comps/Projects';
 import Footer from '../comps/Footer';
+import Header from '../comps/Header';
 
 const Cont = styled(motion.div)`
   display:flex;
@@ -50,21 +51,6 @@ const BottCont = styled.div`
 const ProjCont = styled.div`
   justify-content: center;
 `;
-const Header = styled.p`
-  font-family: 'M PLUS 1p', sans-serif;
-  font-size: 35px;
-  font-weight: 400;
-  color: #1E1B18;
-  margin-bottom:0;
-
-  @media screen and (max-width: 480px) {
-    font-size: 25px;
-  }
-  @media (min-width: 481px) and (max-width: 834px){
-    font-size: 25px;
-  }
-`;
-
 
 
 export default function Graphics() {
@@ -92,7 +78,10 @@ export default function Graphics() {
 
       {/* Contents */}
       <BottCont className="bottCont">
-        <Header>Graphic Design Projects</Header>
+        <Header 
+        text='Projects' 
+        marginT='150px'
+        />
 
         {/* Projects here */}
         <ProjCont className="grid"> 
