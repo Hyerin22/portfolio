@@ -101,8 +101,14 @@ export default function Graphics() {
           <Projects
             routeTo='/Epub'
             src="/ePub.svg" 
-            projName="Let’s Save A Life!"
+            projName="Let&#39;s Save A Life!"
             projDesc="InDesign E-publication"
+          />
+          <Projects
+            routeTo='/WalkmanIllustration'
+            src="/illustPaint.png" 
+            projName="Realistic Illustration"
+            projDesc="Sony Walkman Sports"
           />
 
         </ProjCont>

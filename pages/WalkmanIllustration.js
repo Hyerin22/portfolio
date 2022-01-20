@@ -89,11 +89,17 @@ const SectionCont = styled.div`
   }
 
 `;
+const DesignCont = styled.div`
+  margin-left: 8%;
+`;
+
 const ImgCont = styled.div`
   display: flex;
+  margin-top: 70px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  top: 10px;
 
   @media screen and (max-width: 480px) {
     padding-left: 25px;
@@ -111,12 +117,8 @@ const BottContentCont = styled.div`
   margin-top: 70px;
   margin-bottom: 30px;
 `;
-const ContentContGrid = styled.div`
-  justify-content: center;
-  align-items: center;
-  margin-left: 8%;
-`;
-const PaintingImg = styled.img`
+
+const ProjImg = styled.img`
   max-width: 100%;
   height: auto;
   margin-bottom: 20px;
@@ -147,7 +149,7 @@ const ProjTitle = styled.p`
 
 
 
-export default function DigitalPainting() {
+export default function WalkmanIllustration() {
   const router = useRouter();
 
   return (
@@ -167,15 +169,15 @@ export default function DigitalPainting() {
       {/* Intro Proj */}
       <MainCont className="grid hero_margin">
         <HeroCont>
-          <HeroImg src="/hunterProj.png" />
+          <HeroImg src="/illustPaintProj.png" />
         </HeroCont>
         
         <IntroCont className='container'>
-          <IntroHeader className='intro_header'>Hunter Poster</IntroHeader>
-          <IntroSub className='intro_sub'>Advertising poster</IntroSub>
+          <IntroHeader className='intro_header'>Realistic Illustration</IntroHeader>
+          <IntroSub className='intro_sub'>Sony Walkman Sports</IntroSub>
           <IntroBodyText 
-            text = 'Advertising Hunter Slogan "For the world outside"'
-            marginB = "50px"
+            text = "This project is to recreate a photo image with advanced skills of Illustrator. The goal was making illustration looks as original photo as much as possible."
+            marginB = "50px" 
           />
           <IntroBodyText 
             text = "Role"
@@ -195,7 +197,7 @@ export default function DigitalPainting() {
             marginB="0px"
           />
           <IntroBodyText
-            text="September 2021 - December 2021"
+            text="January 2021"
             paddingR="0px"
             marginB="15px"
           />
@@ -206,7 +208,7 @@ export default function DigitalPainting() {
             marginB="0px"
           />
           <IntroBodyText
-            text="Illustrator, Photoshop"
+            text=" Illustrator"
             paddingR="0px"
             marginB="15px"
           />
@@ -216,52 +218,25 @@ export default function DigitalPainting() {
       {/* Content Start */}
       <ContentCont className='container'>
         <SectionCont>
-          <SubText text="Description" marginL="8%"/>
+          <SubText text="Process" marginL="8%"/>
           <BodyText 
             marginL="8%"
             marginB='0'
-            text = "This poster was designed for a final project in Advanced Photoshop class. I had to create an advertising poster by incorporating it based on the skills I learned in class. I used techniques such as layer styles, brushes, motion blur, and blending mode that I learned."
+            text = "To make the picture as realistic as possible, I started drawing Walkman by dividing the layers in detail utilizing all the tools such as pathfinder, pen tool and gradient tool."
           />
-        </SectionCont>
-
-        <SectionCont>
-          <SubText text="Original Photo Sources" />
-          <ContentContGrid className="grid">
-            <ImgCont>
-              <PaintingImg src="hunterSource1.png" />
-            </ImgCont>
-            <ImgCont>
-              <PaintingImg src="hunterSource2.png" />
-            </ImgCont>
-          </ContentContGrid>
-        </SectionCont>
-
-
-        <SectionCont>
-          <SubText text="Process" /> 
-          <ContentContGrid className="grid">
-            <ImgCont>
-              <PaintingImg src="hunter1.png" />
-            </ImgCont>
-            <ImgCont>
-              <PaintingImg src="hunter2.png" />
-            </ImgCont>
-            <ImgCont>
-              <PaintingImg src="hunter3.jpg" />
-            </ImgCont>
-            <ImgCont>
-              <PaintingImg src="hunter4.png" />
-            </ImgCont>
-
-          </ContentContGrid>
-        </SectionCont>
-
-        <BottContentCont>
-          <SubText text = "Final" />
           <ImgCont>
-            <PaintingImg src="hunterFinal.png" />
+            <ProjImg src="/illustPaintLayers.png" />
+            <ProjTitle>Layer Structure</ProjTitle>
           </ImgCont>
-        </BottContentCont>
+          <ImgCont>
+            <ProjImg src="/illustPaintOriginal.png" />
+            <ProjTitle>Original Photo</ProjTitle>
+          </ImgCont>
+          <ImgCont>
+            <ProjImg src="/illustPaintFinal.jpg" />
+            <ProjTitle>Final Result</ProjTitle>
+          </ImgCont>
+        </SectionCont>
 
         <Footer />
       </ContentCont>
