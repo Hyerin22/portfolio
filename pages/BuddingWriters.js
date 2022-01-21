@@ -204,7 +204,7 @@ export default function Wecycle() {
             paddingR="0px"
             marginB="15px"
           />
-          <Button paddingLeft='0' text='Link' routeTo='https://hyerincheon.com/budding_writers/'/>
+          <Button paddingLeft='0' text='Link' routeTo='https://hyerincheon.ca/budding_writers/'/>
         </IntroCont>
       </MainCont>
       

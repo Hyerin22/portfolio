@@ -10,6 +10,8 @@ import Footer from '../comps/Footer';
 import BodyText from '../comps/BodyText';
 import SubText from '../comps/SubText';
 import IntroBodyText from '../comps/IntroBodyText';
+import Button from '../comps/Button';
+import DownloadButton from '../comps/DownloadButton';
 
 const Cont = styled(motion.div)`
   display: flex;
@@ -56,7 +58,12 @@ const IntroCont = styled.div`
   text-align: left;
   justify-content: center;
   margin-left: 7%;
+
+  .gitHubIcon{
+    display: none;
+  }
 `;
+
 const IntroHeader = styled.p`
   font-family: 'M PLUS 1p', sans-serif;
   font-size: 55px;
@@ -188,6 +195,7 @@ export default function Epub() {
             paddingR="0px"
             marginB="15px"
           />
+          <DownloadButton href=''  text='Download'/>
         </IntroCont>
       </MainCont>
       
