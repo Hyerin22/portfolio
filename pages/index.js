@@ -136,15 +136,16 @@ export default function Home() {
           />
 
           <Projects
+            routeTo='/Wecycle'
+          />
+
+          <Projects
             routeTo='/DigitalPainting'
             src="/painting.png" 
             projName="Anya Taylor-Joy"
             projDesc="Photograph Recreation Drawing"
           />
 
-          <Projects
-            routeTo='/Wecycle'
-          />
 
         </ProjCont>
       </BottCont>
