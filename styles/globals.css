@@ -309,6 +309,9 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
 
  /* Media Query for Tablets */
 @media (min-width: 768px){  
+  .gitHubIcon {
+    width: 18px !important;
+  }
   .container {
     max-width: 760px;
     width: 90%;

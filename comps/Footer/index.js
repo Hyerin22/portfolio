@@ -74,13 +74,13 @@ const Footer = ({
             <Logo src="/Logo.svg" onClick={() => router.push("/")}/>
             <SnsIconCont>
                 <SnsLink target="_blank" href="https://www.linkedin.com/in/hyerin-cheon/">
-                    <FontAwesomeIcon className="LinkedIn icons" icon={faLinkedinIn} size="lg" color="#2E3A59"/>
+                    <FontAwesomeIcon className="icons" icon={faLinkedinIn} size="lg" color="#2E3A59"/>
                 </SnsLink>
                 <SnsLink href="mailto:hlyni22@gmail.com">
-                    <FontAwesomeIcon className="email icons" icon={faEnvelope} size="lg" color="#2E3A59"/>
+                    <FontAwesomeIcon className="icons" icon={faEnvelope} size="lg" color="#2E3A59"/>
                 </SnsLink>
                 <SnsLink href="https://github.com/Hyerin22">
-                    <FontAwesomeIcon className="gitHubIcon icons" icon={faGithub} size="lg" color="#2E3A59"/>
+                    <FontAwesomeIcon className="icons" icon={faGithub} size="lg" color="#2E3A59"/>
                 </SnsLink>
             </SnsIconCont>
             <FooterText>© Hyerin Cheon Portfolio 2022</FooterText>
