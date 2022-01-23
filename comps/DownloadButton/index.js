@@ -65,7 +65,7 @@ const DownloadButton = ({
   const router = useRouter();
   return (
       <Cont 
-        className="scale button_scale"
+        className="scale button_scale live_link"
         marginLeft={marginLeft} 
         onClick = {() => router.push(routeTo)}
         butBorder={butBorder}

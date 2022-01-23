@@ -37,6 +37,7 @@ const Cont = styled.button`
 const Link = styled.a`
   font-family: 'M PLUS 1p', sans-serif;
   font-size: 18px;
+  display: inline;
   font-weight: 400;
   color: #FFFFFF;
   padding-left: ${props=>props.paddingLeft};
