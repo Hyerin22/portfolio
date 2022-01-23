@@ -11,6 +11,7 @@ import BodyText from '../comps/BodyText';
 import Button from '../comps/Button';
 import SubText from '../comps/SubText';
 import IntroBodyText from '../comps/IntroBodyText';
+import DownloadButton from '../comps/DownloadButton';
 
 const Cont = styled(motion.div)`
   display: flex;
@@ -76,6 +77,11 @@ const IntroSub = styled.p`
   margin-bottom: 25px;
   margin-left:0;
   padding-left:0;
+`;
+
+const ButtonCont = styled.div`
+  display: flex;
+  flex-direction: row;
 `;
 
 const ContentCont = styled.div``;
@@ -199,7 +205,21 @@ export default function Wecycle() {
             paddingR="0px"
             marginB="15px"
           />
-          <Button routeTo='https://github.com/Hyerin22/myLandlord'/>
+          <ButtonCont>
+            <Button 
+              routeTo='https://github.com/Hyerin22/myLandlord' 
+              href='https://github.com/Hyerin22/myLandlord'/>
+            <DownloadButton 
+              marginLeft='15px' 
+              text='Go Live' 
+              routeTo='https://my-landlord.vercel.app/'
+              href='https://my-landlord.vercel.app/'
+              bgColor='none'
+              butBorder='3px solid #2B6FC7'
+              fColor='#2B6FC7'
+              />
+          </ButtonCont>
+
         </IntroCont>
       </MainCont>
       

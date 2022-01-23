@@ -7,10 +7,11 @@ const Cont = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color:#2B6FC7;
+  background-color:${props=>props.bgColor};
   border-radius: 35px;
+  margin-left: ${props=>props.marginLeft};
 
-  border: none;
+  border: ${props=>props.butBorder};
   cursor: pointer;
 
   @media (max-width: 480px) {
@@ -34,8 +35,8 @@ const Link = styled.a`
   font-family: 'M PLUS 1p', sans-serif;
   font-size: 18px;
   font-weight: 400;
-  color: #FFFFFF;
-  padding-left: ${props=>props.paddingLeft};
+  color: ${props=>props.fColor};
+  padding-left: 0;
 
   @media (max-width: 480px){
     font-size: 14px;
@@ -55,13 +56,25 @@ const Link = styled.a`
 const DownloadButton = ({
   routeTo ="/",
   text="GitHub Link",
-  paddingLeft = "5%",
-  href=""
+  marginLeft ="0",
+  href="",
+  butBorder="none",
+  bgColor="#2B6FC7",
+  fColor="#FFFFFF"
 })=>{
   const router = useRouter();
   return (
-      <Cont className="scale button_scale" onClick = {() => router.push(routeTo)} >
-        <Link href={href} paddingLeft={paddingLeft}>{text}</Link>
+      <Cont 
+        className="scale button_scale"
+        marginLeft={marginLeft} 
+        onClick = {() => router.push(routeTo)}
+        butBorder={butBorder}
+        bgColor={bgColor}
+        >
+        <Link 
+        href={href}
+        fColor={fColor}
+        >{text}</Link>
       </Cont>
   );
 }

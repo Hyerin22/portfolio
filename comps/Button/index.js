@@ -34,12 +34,11 @@ const Cont = styled.button`
   }
 `;
 
-const Text = styled.p`
+const Link = styled.a`
   font-family: 'M PLUS 1p', sans-serif;
   font-size: 18px;
   font-weight: 400;
   color: #FFFFFF;
-  margin-left: 1%;
   padding-left: ${props=>props.paddingLeft};
 
   @media (max-width: 480px){
@@ -60,13 +59,17 @@ const Text = styled.p`
 const Button = ({
   routeTo ="/",
   text="GitHub Link",
-  paddingLeft = "5%"
+  paddingLeft = "5%",
+  href="/"
 })=>{
   const router = useRouter();
   return (
-      <Cont className="scale button_scale" onClick = {() => router.push(routeTo)} >
+      <Cont 
+        className="scale button_scale" 
+        onClick = {() => router.push(routeTo)} 
+      >
         <FontAwesomeIcon className="gitHubIcon" icon={faGithub} size="2x" color="#FFFFFF"/>
-        <Text paddingLeft={paddingLeft}>{text}</Text>
+        <Link href={href} paddingLeft={paddingLeft}>{text}</Link>
       </Cont>
   );
 }
