@@ -82,6 +82,12 @@ const IntroSub = styled.p`
 const ButtonCont = styled.div`
   display: flex;
   flex-direction: row;
+
+  @media screen and (max-width: 480px) {
+    .live_link {
+      display: none;
+    }
+  }
 `;
 
 const ContentCont = styled.div``;
@@ -201,7 +207,7 @@ export default function Wecycle() {
             marginB="0px"
           />
           <IntroBodyText
-            text="React, JavaScript, Next.js, GitHub, Figma, AOS"
+            text="React, JavaScript, Next.js, GitHub, Figma, Framer Motion"
             paddingR="0px"
             marginB="15px"
           />

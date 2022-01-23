@@ -305,10 +305,6 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
     opacity: 0;
     transition: opacity 300ms, transform 300ms;
   } */
-
-  .live_link {
-    display: none !important;
-  }
 }
 
  /* Media Query for Tablets */

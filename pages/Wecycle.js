@@ -214,6 +214,9 @@ export default function Wecycle() {
               butBorder='3px solid #2B6FC7'
               fColor='#2B6FC7'
               />
+            {/* <Button 
+            href='https://wecycle-apps.vercel.app/'
+            routeTo='https://wecycle-apps.vercel.app/'/> */}
           </ButtonCont>
         </IntroCont>
       </MainCont>
