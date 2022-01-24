@@ -218,8 +218,8 @@ export default function Wecycle() {
             <DownloadButton 
               marginLeft='15px' 
               text='Go Live' 
-              routeTo='https://my-landlord.vercel.app/'
-              href='https://my-landlord.vercel.app/'
+              routeTo='https://mylandlord.hyerincheon.ca/'
+              href='https://mylandlord.hyerincheon.ca/'
               bgColor='none'
               butBorder='3px solid #2B6FC7'
               fColor='#2B6FC7'
