@@ -207,8 +207,8 @@ export default function Wecycle() {
           <Button 
             paddingLeft='0' 
             text='Go Live' 
-            href='https://hyerincheon.ca/budding_writers/'
-            routeTo='https://hyerincheon.ca/budding_writers/'/>
+            href='https://wordpress.hyerincheon.ca/'
+            routeTo='https://wordpress.hyerincheon.ca/'/>
         </IntroCont>
       </MainCont>
       
