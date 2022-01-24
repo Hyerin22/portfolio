@@ -208,8 +208,8 @@ export default function Wecycle() {
             <DownloadButton 
               marginLeft='15px' 
               text='Go Live' 
-              routeTo='https://wecycle-apps.vercel.app/'
-              href='https://wecycle-apps.vercel.app/'
+              routeTo='https://wecycle.hyerincheon.ca/'
+              href='https://wecycle.hyerincheon.ca/'
               bgColor='none'
               butBorder='3px solid #2B6FC7'
               fColor='#2B6FC7'
