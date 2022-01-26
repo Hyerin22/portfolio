@@ -6,6 +6,8 @@ body {
   margin: 0;
   font-family: 'M PLUS 1p', sans-serif;
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-scrolling: touch;
 }
 
 a {
