@@ -6,8 +6,9 @@ body {
   margin: 0;
   font-family: 'M PLUS 1p', sans-serif;
   scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-  -ms-overflow-scrolling: touch;
+  -ms-overflow-style: scrollbar;
+  /* -webkit-overflow-scrolling: touch; */
+  /* -ms-overflow-scrolling: touch; */
 }
 
 a {
@@ -315,6 +316,10 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
 
  /* Media Query for Tablets */
 @media (min-width: 768px){  
+  body {
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar
+  }
   .gitHubIcon {
     width: 18px !important;
   }
@@ -363,7 +368,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
     -webkit-transform: scale(1.1); /* Safari 3-8 */
     transform: scale(1.1); 
   }
-  
+
 }
 
 /* Media Query for Laptops and Desktops */
