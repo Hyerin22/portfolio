@@ -12,7 +12,7 @@ const Cont = styled.a`
 `;
 
 const ProjImg = styled.img`
-    margin-left: -1%;
+    // margin-left: -1%;
 `;
 
 const ProjName = styled.p`
