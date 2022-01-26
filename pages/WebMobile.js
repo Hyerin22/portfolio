@@ -23,7 +23,6 @@ const Cont = styled(motion.div)`
 const NavCont = styled.div`
   display: flex;
   padding-left:3%;
-  box-sizing: border-box;
   flex-direction: row;
   box-sizing: border-box;
 `;
