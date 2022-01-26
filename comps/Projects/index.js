@@ -13,6 +13,7 @@ const Cont = styled.a`
 
 const ProjImg = styled.img`
     margin-right: -1%;
+    // box-shadow: 3px 4px 8px 2px rgba(14, 70, 141, 0.15);
 `;
 
 const ProjName = styled.p`
