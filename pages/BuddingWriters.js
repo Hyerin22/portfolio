@@ -56,7 +56,6 @@ const IntroCont = styled.div`
   flex-direction: column;
   text-align: left;
   justify-content: center;
-  margin-left: 7%;
 
   .gitHubIcon{
     display: none;
@@ -109,33 +108,23 @@ const BottContentCont = styled.div`
 const ContentContGrid = styled.div`
   justify-content: center;
   align-items: center;
-  // margin-right: 8%;
 `;
 const RightCont = styled.div`
   justify-content: center;
-  margin-left: 10%;
   margin-top: 10px;
-
-  @media (max-width: 576px) {
-    margin-left: 20%;
-
-  }
 `;
+
 const LeftCont = styled.div`
   justify-content: center;
-  margin-left: -4%;
 `;
 const DesignImg = styled.img`
-  max-width: 80%;
+  max-width: 100%;
   justify-content: center;
   height: auto;
 
-  @media (max-width: 576px) {
-    max-width: 70%;
-  }
 `;
 const ProjectImg = styled.img`
-  max-width: 85%;
+  max-width: 100%;
   height: auto; 
 `;
 
@@ -215,20 +204,18 @@ export default function Wecycle() {
       {/* Content Start */}
       <ContentCont className='container'>
         <SectionCont>
-          <SubText text="Ideation" marginL="8%"/>
+          <SubText text="Ideation" marginL="0"/>
           <BodyText 
-            marginL="8%"
             marginB='0'
             text = "The website we had to create was for a book cafe. The book cafe was not just a cafe, but spaces for many writers and book lovers, and there were many events for them. We had weekly meetings with our client and modified the design to create a website with the client's preference." 
           />
         </SectionCont>
 
         <SectionCont>
-          <SubText text="Design" />
+          <SubText text="Design" marginL="0"/>
           <ContentContGrid className="grid">
             <LeftCont className='center bodyTextMargin'>
               <BodyText 
-                marginL="20%"
                 text = "Since this website is a space for book lovers' gatherings, the logo was designed to be inspired by people sitting around campfires in the campsite."
                 marginB="30px"
                 
@@ -236,7 +223,6 @@ export default function Wecycle() {
               <BodyText 
                 text = "Afterward, the customer wanted a logo that emphasized the cafe more, and the design was modified using coffee beans, which symbolized coffee."
                 marginB="30px"
-                marginL="20%"
               />
             </LeftCont>
             
@@ -247,14 +233,14 @@ export default function Wecycle() {
         </SectionCont>
 
         <SectionCont>
-          <SubText text = "Personas & Sitemap" />
+          <SubText text = "Personas & Sitemap" marginL="0"/>
           <ImgCont>
             <ProjectImg src="buddingPersona.svg" />
           </ImgCont>
         </SectionCont>
 
         <BottContentCont>
-          <SubText text="Process" marginL="8%"/>
+          <SubText text="Process" marginL="0"/>
           <ImgCont>
             <ProjectImg src="buddingProcess.png" />
           </ImgCont>

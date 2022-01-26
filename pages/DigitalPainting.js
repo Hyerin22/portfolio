@@ -55,7 +55,6 @@ const IntroCont = styled.div`
   flex-direction: column;
   text-align: left;
   justify-content: center;
-  margin-left: 7%;
 `;
 const IntroHeader = styled.p`
   font-family: 'M PLUS 1p', sans-serif;
@@ -92,15 +91,6 @@ const ImgCont = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  @media screen and (max-width: 480px) {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-  @media (min-width: 481px) and (max-width: 1024px){ 
-    padding-left: 25px;
-    padding-right: 25px;
-  }
 `;
 const BottContentCont = styled.div`
   display: flex;
@@ -213,16 +203,15 @@ export default function DigitalPainting() {
       {/* Content Start */}
       <ContentCont className='container'>
         <SectionCont>
-          <SubText text="Description" marginL="8%"/>
+          <SubText text="Description" marginL="0"/>
           <BodyText 
-            marginL="8%"
             marginB='0'
             text = "The goal of this project was to draw a person in a photo in black and white using only Photoshop brush tools. Through this project, I was able to get used to brushes and blending mode tools."
           />
         </SectionCont>
 
         <SectionCont>
-          <SubText text="Process" />
+          <SubText text="Process" marginL="0"/>
           <ImgCont>
             <PaintingImg src="OriginalPhoto.jpg" />
             <ProjTitle>Original Photo</ProjTitle>
@@ -250,7 +239,7 @@ export default function DigitalPainting() {
         </SectionCont>
 
         <BottContentCont>
-          <SubText text = "Final" />
+          <SubText text = "Final" marginL="0"/>
           <ImgCont>
             <PaintingImg src="painting_Final.svg" />
             <ProjTitle>Final Result</ProjTitle>

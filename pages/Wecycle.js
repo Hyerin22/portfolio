@@ -57,7 +57,7 @@ const IntroCont = styled.div`
   flex-direction: column;
   text-align: left;
   justify-content: center;
-  margin-left: 7%;
+  // margin-left: 7%;
 `;
 const IntroHeader = styled.p`
   font-family: 'M PLUS 1p', sans-serif;
@@ -109,31 +109,32 @@ const BottContentCont = styled.div`
 const ContentContGrid = styled.div`
   justify-content: center;
   align-items: center;
-  margin-right: 8%;
+  // margin-right: 8%;
 `;
 const RightCont = styled.div`
   justify-content: center;
-  margin-left: 10%;
+  // margin-left: 10%;
   margin-top: 10px;
 
   @media (max-width: 576px) {
-    margin-left: 20%;
+    // margin-left: 20%;
   }
 `;
 const LeftCont = styled.div`
   justify-content: center;
-  margin-left: -4%;
+  // margin-left: -4%;
 `;
 const DesignImg = styled.img`
   max-width: 100%;
   height: auto;
 
   @media (max-width: 576px) {
-    max-width: 90%;
+    // max-width: 90%;
   }
 `;
 const ProjectImg = styled.img`
-  max-width: 85%;
+  // max-width: 85%;
+  max-width: 100%;
   height: auto; 
 `;
 
@@ -224,32 +225,32 @@ export default function Wecycle() {
       {/* Content Start */}
       <ContentCont className='container'>
         <SectionCont>
-          <SubText text="Ideation" marginL="8%"/>
+          <SubText text="Ideation" marginL="0"/>
           <BodyText 
             marginB='0'
-            marginL="8%"
+            // marginL="8%"
             text = "Our mission is to educate our users about the importance of recycling. We want to be the bridge between parents/teachers and children when it comes to an engaging and fun learning experience." 
           />
         </SectionCont>
 
         <SectionCont>
-          <SubText text="Design" />
+          <SubText text="Design" marginL='0'/>
           <ContentContGrid className="grid">
-            <LeftCont className='center bodyTextMargin'>
+            <LeftCont>
               <BodyText 
-                marginL="20%"
+                // marginL="20%"
                 text = "Our goal was to create a logo that reflects being sustainable as well as appealing to children. We felt that creating a youthful and eco-friendly logo by including the earth and recycling symbol."
                 marginB="30px"
               />
               <BodyText 
                 text = "We selected purple, yellow, and green as a colour palette. Through these intuitive colours, we tried to approach children more friendly. "
                 marginB="30px"
-                marginL="20%"
+                // marginL="20%"
               />
               <BodyText 
                 text = "This way it would communicate our goals for our app, WeCycle."
                 marginB="30px"
-                marginL="20%"
+                // marginL="20%"
               />
             </LeftCont>
             

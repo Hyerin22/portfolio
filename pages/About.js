@@ -86,14 +86,14 @@ const ImgCont = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media screen and (max-width: 480px) {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-  @media (min-width: 481px) and (max-width: 1024px){ 
-    padding-left: 25px;
-    padding-right: 25px;
-  }
+  // @media screen and (max-width: 480px) {
+  //   padding-left: 25px;
+  //   padding-right: 25px;
+  // }
+  // @media (min-width: 481px) and (max-width: 1024px){ 
+  //   padding-left: 25px;
+  //   padding-right: 25px;
+  // }
 `;
 
 const ProfileImg = styled.img`

@@ -56,7 +56,6 @@ const IntroCont = styled.div`
   flex-direction: column;
   text-align: left;
   justify-content: center;
-  margin-left: 7%;
 `;
 const IntroHeader = styled.p`
   font-family: 'M PLUS 1p', sans-serif;
@@ -101,36 +100,9 @@ const BottContentCont = styled.div`
   margin-top: 100px;
   margin-bottom: 30px;
 `;
-const ContentContGrid = styled.div`
-  justify-content: center;
-  align-items: center;
-  // margin-right: 8%;
-`;
-const RightCont = styled.div`
-  justify-content: center;
-  margin-left: 10%;
-  margin-top: 10px;
 
-  @media (max-width: 576px) {
-    margin-left: 20%;
-
-  }
-`;
-const LeftCont = styled.div`
-  justify-content: center;
-  margin-left: -4%;
-`;
-const DesignImg = styled.img`
-  max-width: 80%;
-  justify-content: center;
-  height: auto;
-
-  @media (max-width: 576px) {
-    max-width: 70%;
-  }
-`;
 const ProjectImg = styled.img`
-  max-width: 85%;
+  max-width: 100%;
   height: auto; 
 `;
 
@@ -206,23 +178,22 @@ export default function Wecycle() {
       {/* Content Start */}
       <ContentCont className='container'>
         <SectionCont>
-          <SubText text="Ideation" marginL="8%"/>
+          <SubText text="Ideation" marginL="0"/>
           <BodyText 
-            marginL="8%"
             marginB='0'
             text = "Throughout Canadian history the discrimination and mistreatment of Indigenous peoples have been repeated many times even up to today, however, it is not talked about enough. For our website, we would like people to be more aware of the Indigenous peoples and their territory." 
           />
         </SectionCont>
 
         <SectionCont>
-          <SubText text = "Wireframe" />
+          <SubText text = "Wireframe" marginL="0" />
           <ImgCont>
             <ProjectImg src="natiiveWF.svg" />
           </ImgCont>
         </SectionCont>
 
         <BottContentCont>
-          <SubText text="Final" marginL="8%"/>
+          <SubText text="Final" marginL="0"/>
           <ImgCont>
             <ProjectImg src="natiiveFinal.svg" />
           </ImgCont>

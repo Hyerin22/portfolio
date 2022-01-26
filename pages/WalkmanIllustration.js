@@ -55,7 +55,6 @@ const IntroCont = styled.div`
   flex-direction: column;
   text-align: left;
   justify-content: center;
-  margin-left: 7%;
 `;
 const IntroHeader = styled.p`
   font-family: 'M PLUS 1p', sans-serif;
@@ -89,9 +88,7 @@ const SectionCont = styled.div`
   }
 
 `;
-const DesignCont = styled.div`
-  margin-left: 8%;
-`;
+
 
 const ImgCont = styled.div`
   display: flex;
@@ -100,22 +97,6 @@ const ImgCont = styled.div`
   justify-content: center;
   align-items: center;
   top: 10px;
-
-  @media screen and (max-width: 480px) {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-  @media (min-width: 481px) and (max-width: 1024px){ 
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-`;
-const BottContentCont = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 70px;
-  margin-bottom: 30px;
 `;
 
 const ProjImg = styled.img`
@@ -218,9 +199,8 @@ export default function WalkmanIllustration() {
       {/* Content Start */}
       <ContentCont className='container'>
         <SectionCont>
-          <SubText text="Process" marginL="8%"/>
+          <SubText text="Process" marginL="0"/>
           <BodyText 
-            marginL="8%"
             marginB='0'
             text = "To make the picture as realistic as possible, I started drawing Walkman by dividing the layers in detail utilizing all the tools such as pathfinder, pen tool and gradient tool."
           />

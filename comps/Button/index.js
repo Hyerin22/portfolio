@@ -43,10 +43,10 @@ const Link = styled.a`
   padding-left: ${props=>props.paddingLeft};
 
   @media (max-width: 480px){
-    font-size: 14px;
+    font-size: 13px;
   }
   @media (min-width: 768px){
-    font-size: 16px;
+    font-size: 14px;
   }
   @media (min-width: 992px){
     font-size: 18px;

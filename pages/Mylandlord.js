@@ -57,7 +57,6 @@ const IntroCont = styled.div`
   flex-direction: column;
   text-align: left;
   justify-content: center;
-  margin-left: 7%;
 `;
 const IntroHeader = styled.p`
   font-family: 'M PLUS 1p', sans-serif;
@@ -116,33 +115,22 @@ const BottContentCont = styled.div`
 const ContentContGrid = styled.div`
   justify-content: center;
   align-items: center;
-  // margin-right: 8%;
 `;
 const RightCont = styled.div`
   justify-content: center;
-  margin-left: 10%;
   margin-top: 10px;
-
-  @media (max-width: 576px) {
-    margin-left: 20%;
-
-  }
 `;
 const LeftCont = styled.div`
   justify-content: center;
-  margin-left: -4%;
 `;
 const DesignImg = styled.img`
-  max-width: 80%;
+  max-width: 100%;
   justify-content: center;
   height: auto;
 
-  @media (max-width: 576px) {
-    max-width: 70%;
-  }
 `;
 const ProjectImg = styled.img`
-  max-width: 85%;
+  max-width: 100%;
   height: auto; 
 `;
 
@@ -232,20 +220,18 @@ export default function Wecycle() {
       {/* Content Start */}
       <ContentCont className='container'>
         <SectionCont>
-          <SubText text="Ideation" marginL="8%"/>
+          <SubText text="Ideation" marginL="0"/>
           <BodyText 
-            marginL="8%"
             marginB='0'
             text = "MyLandlords’ goal is to be able to help make it easier for residents in Greater Vancouver to find rent by looking for an ideal landlord. With our application, tenants and landlords will be able to communicate with each other and it will allow for tenants to leave honest reviews during their time with the landlord to help other prospective renters." 
           />
         </SectionCont>
 
         <SectionCont>
-          <SubText text="Design" />
+          <SubText text="Design" marginL="0" />
           <ContentContGrid className="grid">
             <LeftCont className='center bodyTextMargin'>
               <BodyText 
-                marginL="20%"
                 text = "Since our website focuses on the review and rating system, we decided to give our logo a house, test balloon, and checkmark to represent the theme. This logo gives an idea to users about free communication and honest reviews."
                 marginB="30px"
                 
@@ -253,7 +239,6 @@ export default function Wecycle() {
               <BodyText 
                 text = "In addition, purple, which expresses the luxury that can encompass target markets of all ages, was set as the colour of the main theme."
                 marginB="30px"
-                marginL="20%"
               />
             </LeftCont>
             
@@ -264,30 +249,29 @@ export default function Wecycle() {
         </SectionCont>
 
         <SectionCont>
-          <SubText text = "Task Models" />
+          <SubText text = "Task Models" marginL="0" />
           <ImgCont>
             <ProjectImg src="mylandlordTM.svg" />
           </ImgCont>
         </SectionCont>
 
         <SectionCont>
-          <SubText text = "Personas" />
+          <SubText text = "Personas" marginL="0" />
           <ImgCont>
             <ProjectImg src="mylandlordPersona.svg" />
           </ImgCont>
         </SectionCont>
 
         <SectionCont>
-          <SubText text = "Final of the main pages" />
+          <SubText text = "Final of the main pages" marginL="0" />
           <ImgCont>
             <ProjectImg src="mylandlordFinal.svg" />
           </ImgCont>
         </SectionCont>
 
         <BottContentCont>
-          <SubText text="Conclusion" marginL="8%"/>
+          <SubText text="Conclusion" marginL="0"/>
           <BodyText 
-            marginL="8%"
             text = "After making taskmodel, persona, and wireframe, we did four times of user tests. Based on those tests, we designed final prototype, and started to code out our application. With react and next.js, we built the frontend side of the application and connected it to the backend by collaborating with full-stack developers." 
           />
         </BottContentCont>

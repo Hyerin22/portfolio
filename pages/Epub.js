@@ -57,7 +57,7 @@ const IntroCont = styled.div`
   flex-direction: column;
   text-align: left;
   justify-content: center;
-  margin-left: 7%;
+  // margin-left: 7%;
 
   .gitHubIcon{
     display: none;
@@ -97,7 +97,7 @@ const SectionCont = styled.div`
 
 `;
 const DesignCont = styled.div`
-  margin-left: 8%;
+  // margin-left: 8%;
 `;
 
 const ImgCont = styled.div`
@@ -107,14 +107,14 @@ const ImgCont = styled.div`
   align-items: center;
   top: 10px;
 
-  @media screen and (max-width: 480px) {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-  @media (min-width: 481px) and (max-width: 1024px){ 
-    padding-left: 25px;
-    padding-right: 25px;
-  }
+  // @media screen and (max-width: 480px) {
+  //   padding-left: 25px;
+  //   padding-right: 25px;
+  // }
+  // @media (min-width: 481px) and (max-width: 1024px){ 
+  //   padding-left: 25px;
+  //   padding-right: 25px;
+  // }
 `;
 const BottContentCont = styled.div`
   display: flex;
@@ -202,16 +202,15 @@ export default function Epub() {
       {/* Content Start */}
       <ContentCont className='container'>
         <SectionCont>
-          <SubText text="Motivation" marginL="8%"/>
+          <SubText text="Motivation" marginL="0"/>
           <BodyText 
-            marginL="8%"
             marginB='0'
             text = "I saw the news that the two boys saved their grandmother from death using CPR techniques taught by their mother. A little training proves that everyone can save lives regardless of age or physique. Since we can't predict where to save people, everyone, even children should know how to help someone by learning CPR."
           />
         </SectionCont>
 
         <BottContentCont>
-          <SubText text="Design" marginL="8%"/>
+          <SubText text="Design" marginL="0"/>
           <DesignCont>
             <ImgCont>
               <EpubImg src="ePubDesign1.svg" />

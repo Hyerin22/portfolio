@@ -237,15 +237,14 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {
   .container {
+    max-width: 460px;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
 
   .gitHubIcon {
     width: 13px !important;
-  }
-  .bodyTextMargin {
-    margin-left: -3.2rem !important;
   }
   /* .bodyText {
     margin-bottom: 10px !important;
@@ -309,6 +308,10 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
     padding: 20px;
   }
 
+  .grid{
+    grid-template-columns: 1fr;
+  }
+
   .arrow {
     display: none;
   }
@@ -325,7 +328,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
   }
   .container {
     max-width: 760px;
-    width: 90%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -342,6 +345,8 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
   }
   .grid {
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5%;
+    grid-row-gap: 3%;
   }
 
   .intro_header {
@@ -394,12 +399,14 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
   }
   .grid {
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5%;
+    grid-row-gap: 3%;
   }
 
   .about_prof_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 30px;
+    grid-column-gap: 5%;
   }
 
   .intro_header {
@@ -446,6 +453,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
   .grid {
     grid-template-columns: 1fr 1fr;
     column-gap: 5%;
+    grid-row-gap: 3%;
   }
 
   .scale{

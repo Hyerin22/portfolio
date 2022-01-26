@@ -55,7 +55,7 @@ const IntroCont = styled.div`
   flex-direction: column;
   text-align: left;
   justify-content: center;
-  margin-left: 7%;
+  // margin-left: 7%;
 `;
 const IntroHeader = styled.p`
   font-family: 'M PLUS 1p', sans-serif;
@@ -95,14 +95,14 @@ const ImgCont = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media screen and (max-width: 480px) {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-  @media (min-width: 481px) and (max-width: 1024px){ 
-    padding-left: 25px;
-    padding-right: 25px;
-  }
+  // @media screen and (max-width: 480px) {
+  //   padding-left: 25px;
+  //   padding-right: 25px;
+  // }
+  // @media (min-width: 481px) and (max-width: 1024px){ 
+  //   // padding-left: 25px;
+  //   padding-right: 25px;
+  // }
 `;
 const BottContentCont = styled.div`
   display: flex;
@@ -114,35 +114,13 @@ const BottContentCont = styled.div`
 const ContentContGrid = styled.div`
   justify-content: center;
   align-items: center;
-  margin-left: 8%;
+  // margin-left: 8%;
 `;
 const PaintingImg = styled.img`
   max-width: 100%;
   height: auto;
   margin-bottom: 20px;
-`;
-
-const ProjTitle = styled.p`
-  font-family: 'M PLUS 1p', sans-serif;
-  font-size: 18px;
-  display: inline-block;
-  overflow: hidden;
-  white-space: wrap;
-  font-weight: 400;
-  color: #4B4B4B;
-  margin-bottom: 90px;
-
-  @media screen and (max-width: 480px) {
-    font-size: 16px;
-    margin-top:0;
-  }
-  @media (min-width: 481px) and (max-width: 834px){
-    font-size: 18px;
-    margin-top:0;
-  }
-  @media screen and (min-width: 835px) {
-    font-size: 18px;
-  }
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.3));
 `;
 
 
@@ -216,16 +194,16 @@ export default function DigitalPainting() {
       {/* Content Start */}
       <ContentCont className='container'>
         <SectionCont>
-          <SubText text="Description" marginL="8%"/>
+          <SubText text="Description" marginL='0'/>
           <BodyText 
-            marginL="8%"
+            // marginL="8%"
             marginB='0'
             text = "This poster was designed for a final project in Advanced Photoshop class. I had to create an advertising poster by incorporating it based on the skills I learned in class. I used techniques such as layer styles, brushes, motion blur, and blending mode that I learned."
           />
         </SectionCont>
 
         <SectionCont>
-          <SubText text="Original Photo Sources" />
+          <SubText text="Original Photo Sources" marginL='0'/>
           <ContentContGrid className="grid">
             <ImgCont>
               <PaintingImg src="hunterSource1.png" />
@@ -238,7 +216,7 @@ export default function DigitalPainting() {
 
 
         <SectionCont>
-          <SubText text="Process" /> 
+          <SubText text="Process" marginL='0'/> 
           <ContentContGrid className="grid">
             <ImgCont>
               <PaintingImg src="hunter1.png" />
@@ -257,7 +235,7 @@ export default function DigitalPainting() {
         </SectionCont>
 
         <BottContentCont>
-          <SubText text = "Final" />
+          <SubText text = "Final" marginL='0'/>
           <ImgCont>
             <PaintingImg src="hunterFinal.png" />
           </ImgCont>

@@ -21,6 +21,7 @@ line-height: 150%;
 
 @media (max-width: 480px){
   font-size: 16px;
+  padding-right: 0px;
 }
 @media (min-width: 768px){
   font-size: 16px;
