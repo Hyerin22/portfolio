@@ -4,7 +4,7 @@ import {useRouter} from 'next/router';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { faCode, faEnvelope, faEnvelopeOpen, faEnvelopeSquare, faPenNib } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Cont = styled.div`
     display:flex;
@@ -27,9 +27,6 @@ const SnsLink = styled.a`
     margin-left: 30px;
     margin-right: 32px;
     font-size: 18px;
-`;
-const SnsIcon = styled.img`
-
 `;
 
 const FooterText = styled.p`

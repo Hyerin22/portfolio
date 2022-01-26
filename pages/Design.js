@@ -9,6 +9,9 @@ import Projects from '../comps/Projects';
 import Footer from '../comps/Footer';
 import Header from '../comps/Header';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+
 const Cont = styled(motion.div)`
   display:flex;
   flex-direction: column;
@@ -39,8 +42,17 @@ const Logo = styled.img`
 const HeroCont = styled.div`
   display: flex;
   justify-content: center;
-
+  align-items: center;
+  margin-top: 55px;
+  flex-direction: column;
 `; 
+
+const IconCont = styled.a`
+  text-decoration: none;
+  position: absolute;
+  bottom: 0px;
+`;
+
 const HeroImg = styled.img`
 `;
 const BottCont = styled.div`
@@ -74,6 +86,14 @@ export default function Graphics() {
       {/* HeroImage */}
       <HeroCont>
         <HeroImg className="page_hero" src="/Graphics.svg" />
+        <IconCont className='scroll_big_screen' href="#go-down">
+          <FontAwesomeIcon 
+            className="arrow_scale arrow" 
+            icon={faChevronDown} 
+            size="2x" 
+            color="#2B6FC7"
+            />
+        </IconCont>
       </HeroCont>
 
       {/* Contents */}

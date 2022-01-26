@@ -4,8 +4,7 @@ import {useRouter} from 'next/router';
 import { motion } from "framer-motion";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { faCode, faEnvelope, faEnvelopeOpen, faEnvelopeSquare, faPenNib } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 import Nav from '../comps/Nav';
 import Hamburger from '../comps/Hamburger';
@@ -43,15 +42,23 @@ const Logo = styled.img`
 const HeroCont = styled.div`
   display: flex;
   justify-content: center;
-
+  align-items: center;
+  margin-top: 55px;
+  flex-direction: column;
 `; 
+
+const IconCont = styled.a`
+  text-decoration: none;
+  position: absolute;
+  bottom: 0px;
+`;
 
 const HeroImg = styled.img`
   
 `;
 
 const ContentCont = styled.div`
-  margin-top: 100px;
+  margin-top: 150px;
   
   @media screen and (max-width: 480px) {
     margin-top: 30px;
@@ -133,12 +140,20 @@ export default function About() {
       {/* HeroImage */}
       <HeroCont>
         <HeroImg className="page_hero" src="/About.svg" />
+        <IconCont className='scroll_big_screen' href="#about-down">
+          <FontAwesomeIcon 
+            className="arrow_scale arrow" 
+            icon={faChevronDown} 
+            size="2x" 
+            color="#2B6FC7"
+            />
+        </IconCont>
       </HeroCont>
 
       {/* Contents */}
-      <ContentCont className='container'>
+      <ContentCont className='container' id='about-down'>
         {/* profile */}
-        <SectionCont>
+        <SectionCont >
           <ContentContGrid className='about_prof_grid container'>
             <ImgCont>
               <ProfileImg src='rin_profile.svg' />
