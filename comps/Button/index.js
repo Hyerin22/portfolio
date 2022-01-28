@@ -13,6 +13,7 @@ const Cont = styled.button`
   justify-content: center;
   background-color:#2B6FC7;
   border-radius: 35px;
+  padding: 0;
 
   border: none;
   cursor: pointer;

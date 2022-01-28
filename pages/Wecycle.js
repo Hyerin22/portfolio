@@ -207,7 +207,7 @@ export default function Wecycle() {
             href='https://github.com/Hyerin22/WeCycle'
             routeTo='https://github.com/Hyerin22/WeCycle'/>
             <DownloadButton 
-              marginLeft='15px' 
+              marginLeft='13px' 
               text='Go Live' 
               routeTo='https://wecycle.hyerincheon.ca/'
               href='https://wecycle.hyerincheon.ca/'
