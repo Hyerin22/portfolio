@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import styled from 'styled-components';
 import {useRouter} from 'next/router';
 import { motion } from "framer-motion";
-import Head from 'next/head'
+import Head from 'next/head';
 
 import Nav from '../comps/Nav';
 import Hamburger from '../comps/Hamburger';
