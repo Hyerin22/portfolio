@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import styled from 'styled-components';
 import {useRouter} from 'next/router';
 import { motion } from "framer-motion";
+import Head from 'next/head'
 
 import Nav from '../comps/Nav';
 import Hamburger from '../comps/Hamburger';
@@ -90,6 +91,9 @@ export default function Home() {
       initial={{opacity: 0}} 
       animate={{opacity: 1, transition:{delay: 0.25}}}
       className="Cont">
+      <Head>
+        <link rel='icon' href='/Logo.svg' />
+      </Head>
       {/* Top Navigation */}
       <NavCont className="myLogo">
         <LogoCont onClick={() => router.push("/")}>
