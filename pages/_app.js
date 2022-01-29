@@ -6,6 +6,7 @@ function MyApp({ Component, pageProps }) {
   <Component {...pageProps} />
   <Head>
     <title>Hyerin Cheon</title>
+    <link rel='icon' href='/Logo.svg' />
   </Head>
     
     </div>
