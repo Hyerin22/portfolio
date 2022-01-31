@@ -156,7 +156,7 @@ export default function Wecycle() {
             marginB="0px"
           />
           <IntroBodyText
-            text="September 2021 - Decemper 2021"
+            text="September 2021 - October 2021"
             paddingR="0px"
             marginB="15px"
           />
