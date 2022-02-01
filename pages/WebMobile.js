@@ -81,7 +81,7 @@ export default function WebMobile() {
 
       {/* HeroImage */}
       <HeroCont>
-        <HeroImg className="page_hero" src="/WebMobile.svg" />
+        <HeroImg className="page_hero" src="/WebMobile2.svg" />
         <IconCont className='scroll_big_screen' href="#go-down">
           <FontAwesomeIcon 
             className="arrow_scale arrow" 
