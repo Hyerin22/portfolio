@@ -64,7 +64,7 @@ const NavWeb =({
       >
         <PageName 
           beforeWidth="100%"
-          >WEB/MOBILE APP</PageName>
+          >WEB/APP DEVELOPMENT</PageName>
       </Cont>
     );
   }
