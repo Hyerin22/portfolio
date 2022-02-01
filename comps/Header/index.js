@@ -2,7 +2,10 @@ import React from 'react'
 import styled from 'styled-components';
 
 const Cont = styled.div`
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 const Text = styled.p`
@@ -24,22 +27,35 @@ const Text = styled.p`
   }
 `;
 
+const TextLine = styled.div`
+  display: ${props=>props.display};
+  position: relative;
+  background-color: #2B6FC7;
+  bottom: -10px; 
+  height: 2px;
+  width: 100%;
+`;
 
 const Header = ({
   fcolor = "#1E1B18",
   marginB = "0",
   text = "header",
-  marginT = "0"
+  marginT = "0",
+  display = "block"
 
 })=>{
 
     return (
-        <Cont id="go-down">
+        <Cont >
           <Text
+            id="go-down"
             fcolor={fcolor}
             marginB={marginB}
             marginT={marginT}
-          >{text}</Text>
+          >{text}
+          </Text>
+          <TextLine display={display}/>
+          
         </Cont>
     );
 }

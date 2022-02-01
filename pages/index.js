@@ -10,6 +10,10 @@ import Projects from '../comps/Projects';
 import Footer from '../comps/Footer';
 import Header from '../comps/Header';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import SubText from '../comps/SubText';
+
 const Cont = styled(motion.div)`
   display:flex;
   flex-direction: column;
@@ -40,14 +44,26 @@ const Logo = styled.img`
 `;
 
 const MidCont = styled.div`
-  // display:flex;
-  // flex:1
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 60px;
+
+`;
+
+const HeroCont = styled.div`
   flex-direction: row;
   justify-content:center;
   align-items:center;
   box-sizing: border-box;
   width: 100%;
   padding-left: 8%;
+  
+`;
+const ArrowCont = styled.div`
+  padding-top: 70px;
+
 `;
 
 const LeftCont = styled.div`
@@ -64,6 +80,9 @@ const RightCont = styled.div`
   width: 100%;
   z-index:-1000;
 `;
+const IconCont = styled.a`
+  text-decoration: none;
+`;
 
 const HeroImg = styled.img`
   width: 100%;
@@ -74,6 +93,8 @@ const BottCont = styled.div`
   // padding-left: 8%;
   // padding-right: 8%;
 `;
+
+
 const ProjCont = styled.div`
   // display:flex;
   // flex-wrap: wrap;
@@ -103,24 +124,38 @@ export default function Home() {
       {/* Body */}
 
       {/* Hero Image */}
-      <MidCont className="midCont">
-        <LeftCont className="hero_text">
-          <HeroText/>
-        </LeftCont>
-        <RightCont className="flex">
-          <HeroImg className="hero_img" src="/Hero.svg" />
-        </RightCont>
+      <MidCont>
+        <HeroCont className="heroCont">
+          <LeftCont className="hero_text">
+            <HeroText/>
+          </LeftCont>
+          <RightCont className="flex">
+            <HeroImg className="hero_img" src="/Hero.svg" />
+          </RightCont>
+        </HeroCont>
+        <ArrowCont className='arrow_top'>
+          <IconCont className='scroll_big_screen' href="#go-down">
+            <FontAwesomeIcon 
+              className="arrow_scale arrow" 
+              icon={faChevronDown} 
+              size="2x" 
+              color="#2B6FC7"
+              width={20}
+              />
+          </IconCont>
+        </ArrowCont>
+        <Header 
+        text='Highlight Projects'
+        marginT='100px'
+        />
       </MidCont>
       
       {/* Contents */}
       <BottCont className='container'>
         
-        <Header 
-        text='Highlight Projects'
-        />
 
         {/* Projects here */}
-        <ProjCont className="grid"> 
+        <ProjCont className="grid "> 
           <Projects
             routeTo='/Mylandlord'
             src="/mylandlord.svg" 

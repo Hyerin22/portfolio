@@ -160,11 +160,12 @@ export default function About() {
               <Header
               marginB='40px'
               marginT='70px'
-              text='Hello I’m Hyerin!' />
+              text='Hello I&#39;m Hyerin!' 
+              display='none'/>
               <BodyText
               paddingR='0'
               marginB='30px'
-              text="I’m a Digital Design & Development student at BCIT who is an aspiring Front-End Developer with design knowledge."/>
+              text="I&#39;m a Digital Design & Development student at BCIT who is an aspiring Front-End Developer with design knowledge."/>
               <BodyText
               paddingR='0'
               marginB='30px'

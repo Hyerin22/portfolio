@@ -44,6 +44,7 @@ const HeroCont = styled.div`
   align-items: center;
   margin-top: 55px;
   flex-direction: column;
+  margin-bottom: 60px;
 `; 
 
 const IconCont = styled.a`
@@ -90,14 +91,14 @@ export default function Graphics() {
             width={20}
             />
         </IconCont>
+        <Header 
+        text='Projects' 
+        marginT='100px'
+        />
       </HeroCont>
 
       {/* Contents */}
       <BottCont className="bottCont container">
-        <Header 
-        text='Projects' 
-        marginT='150px'
-        />
 
         {/* Projects here */}
         <ProjCont className="grid"> 
