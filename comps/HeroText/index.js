@@ -30,6 +30,7 @@ const Text = styled.p`
 
 const GifBio = styled.img`
     width:100%;
+    padding-right: 30px;
 `;
 
 
@@ -41,7 +42,7 @@ const HeroText = ({
     return (
         <Cont>
             <Text>Hello, <br/> I am <span className="blueText">Hyerin Cheon</span></Text>
-            <GifBio src="/Bio.gif" />
+            <GifBio src="/Bio2.gif" />
         </Cont>
     );
 }

@@ -20,14 +20,13 @@ a {
   box-sizing: border-box;
 }
 
+
 .blueText{
   font-family: 'M PLUS 1p', sans-serif;
   font-size: 55px;
   font-weight: 800;
   color: #2B6FC7;
 }
-
-
 
 
 /* Layout */
@@ -52,12 +51,11 @@ a {
   padding-right: 15px;
 }
 
+/* Icons */
 .icons:hover {
   color: #2B6FC7;
   text-decoration: underline;
 }
-
-
 .icons_display {
   margin-left:auto;
 }
@@ -71,41 +69,12 @@ a {
   color: #1E1B18;
   position: relative;
 }
-/* 
-.resume::after {
-  content: '';
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 100%;
-  height: 1.5px;
-  background-color: #2B6FC7;
-  opacity: 0;
-  transition: opacity 300ms, transform 300ms;
-}
-
-.resume:hover::after,
-.resume:focus::after {
-  color: #2B6FC7;
-  transform: translate3d(0, 0.2em, 0);
-}
-
-.resume::after {
-  opacity: 1;
-  transform: scale(0);
-  transform-origin: center;
-}
-
-.resume:hover::after,
-.resume:focus::after{
-  transform: scale(1);
-} */
 
 .resume:hover {
   color: #2B6FC7;
 }
 
-
+/* Arrow Icon */
 .arrow_scale {
   transition: transform .4s;
   transition-timing-function: ease;
@@ -246,9 +215,6 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
   .gitHubIcon {
     width: 13px !important;
   }
-  /* .bodyText {
-    margin-bottom: 10px !important;
-  } */
   .hero_margin {
     margin-top: 3% !important;
   }
@@ -378,9 +344,6 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
 
 /* Media Query for Laptops and Desktops */
 @media (min-width: 992px) {
-  /* .flex {
-    display: flex;
-  } */
   .container {
     max-width: 992px;
     margin-left: auto;
@@ -430,6 +393,8 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
   }
   
 }
+
+/* Media Query for Desktops */
 @media (min-width: 1200px) {
   .container {
     max-width: 1200px;

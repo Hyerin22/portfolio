@@ -133,7 +133,7 @@ const Menu = ({
                 onClick={()=>router.push('/')} 
                 className={router.pathname == "/" ? "active" : ""}
                 >HOME</Page>
-              <Page onClick={()=>router.push('/WebMobile')} >WEB/MOBILE APP</Page>
+              <Page onClick={()=>router.push('/WebMobile')} >WEB/APP DEVELOPMENT</Page>
               <Page onClick={()=>router.push('/Design')} className="region" >GRAPHIC DESIGN</Page>
               <Page onClick={()=>router.push('/About')} className="region" >ABOUT</Page>
               <a className="resume" href='/hyerincheon-resume.pdf' download>RESUME</a>
