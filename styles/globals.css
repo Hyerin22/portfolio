@@ -431,9 +431,6 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
   
 }
 @media (min-width: 1200px) {
-  /* .flex {
-    display: flex;
-  } */
   .container {
     max-width: 1200px;
     margin-left: auto;

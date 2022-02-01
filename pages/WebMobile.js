@@ -50,17 +50,13 @@ const HeroCont = styled.div`
 
 const IconCont = styled.a`
   text-decoration: none;
-  position: absolute;
-  bottom: 0px;
 `;
 
 const HeroImg = styled.img`
 `;
 const BottCont = styled.div`
-  padding-left: 8%;
-  padding-right: 8%;
-
 `;
+
 const ProjCont = styled.div`
   justify-content: center;
 `;
@@ -92,12 +88,13 @@ export default function WebMobile() {
             icon={faChevronDown} 
             size="2x" 
             color="#2B6FC7"
+            width={20}
             />
         </IconCont>
       </HeroCont>
 
       {/* Contents */}
-      <BottCont className="bottCont">
+      <BottCont className="bottCont container">
         <Header 
         text='Projects' 
         marginT='150px'

@@ -48,8 +48,6 @@ const HeroCont = styled.div`
 
 const IconCont = styled.a`
   text-decoration: none;
-  position: absolute;
-  bottom: 0px;
 `;
 
 const HeroImg = styled.img`
@@ -145,6 +143,7 @@ export default function About() {
             icon={faChevronDown} 
             size="2x" 
             color="#2B6FC7"
+            width={20}
             />
         </IconCont>
       </HeroCont>
