@@ -145,7 +145,7 @@ export default function Wecycle() {
             marginB = "0px"
           />
           <IntroBodyText
-            text="Deisnger, Developer"
+            text="Designer, Developer"
             paddingR="0px"
             marginB="15px"
           />
