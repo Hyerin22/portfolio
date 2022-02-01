@@ -71,8 +71,8 @@ const HeroImg = styled.img`
 `;
 
 const BottCont = styled.div`
-  padding-left: 8%;
-  padding-right: 8%;
+  // padding-left: 8%;
+  // padding-right: 8%;
 `;
 const ProjCont = styled.div`
   // display:flex;
@@ -113,7 +113,7 @@ export default function Home() {
       </MidCont>
       
       {/* Contents */}
-      <BottCont>
+      <BottCont className='container'>
         
         <Header 
         text='Highlight Projects'
