@@ -145,7 +145,7 @@ export default function Home() {
           </IconCont>
         </ArrowCont>
         <Header 
-        text='Highlight Projects'
+        text='My Recent Works'
         marginT='100px'
         />
       </MidCont>
@@ -162,27 +162,10 @@ export default function Home() {
             projName="MyLandlord"
             projDesc="Landlord Review Web Application"
           />
-          
-
-          <Projects
-            routeTo='/Epub'
-            src="/ePub.svg" 
-            projName="Let&#39;s Save A Life!"
-            projDesc="InDesign E-publication"
-          />
 
           <Projects
             routeTo='/Wecycle'
           />
-
-          <Projects
-            routeTo='/DigitalPainting'
-            src="/painting.png" 
-            projName="Anya Taylor-Joy"
-            projDesc="Photograph Recreation Drawing"
-          />
-
-
         </ProjCont>
       </BottCont>
       <Footer />

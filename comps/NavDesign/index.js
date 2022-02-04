@@ -64,7 +64,7 @@ const NavDesign =({
       >
         <PageName 
           beforeWidth="100%"
-          >GRAPHIC DESIGN</PageName>
+          >OTHER WORKS</PageName>
       </Cont>
     );
   }
@@ -76,7 +76,7 @@ const NavDesign =({
     >
       <PageName 
         beforeWidth={beforeWidth}
-        >GRAPHIC DESIGN</PageName>
+        >OTHER WORKS</PageName>
     </Cont>
   );
 }
