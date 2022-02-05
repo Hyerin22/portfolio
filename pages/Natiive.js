@@ -171,7 +171,9 @@ export default function Wecycle() {
             paddingR="0px"
             marginB="15px"
           />
-          <Button routeTo='https://github.com/Hyerin22/Natiive'/>
+          <Button 
+          routeTo='https://github.com/Hyerin22/Natiive'
+          href='https://github.com/Hyerin22/Natiive'/>
         </IntroCont>
       </MainCont>
       

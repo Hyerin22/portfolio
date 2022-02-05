@@ -236,7 +236,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
   }
 
   .gitHubIcon {
-    width: 13px !important;
+    width: 18px !important;
   }
   .hero_margin {
     margin-top: 3% !important;

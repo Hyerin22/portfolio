@@ -15,13 +15,13 @@ const Cont = styled.div`
   cursor: pointer;
 
   @media (max-width: 480px) {
-    width: 160px;
+    width: 130px;
     height: 40px;
     margin-top: 10px;
   }
   @media (min-width: 768px){
     margin-top: 20px;
-    width: 160px;
+    width: 140px;
     height: 45px;
   }
   @media (min-width: 992px) {
