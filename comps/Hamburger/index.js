@@ -136,7 +136,7 @@ const Menu = ({
               <Page onClick={()=>router.push('/WebMobile')} >WEB/APP DEVELOPMENT</Page>
               <Page onClick={()=>router.push('/Design')} className="region" >OTHER WORKS</Page>
               <Page onClick={()=>router.push('/About')} className="region" >ABOUT</Page>
-              <a className="resume" href='/hyerincheon-resume.pdf' download>RESUME</a>
+              <a className="resume" href='/Hyerin_Cheon_Resume.pdf' download>RESUME</a>
             </PageHolder>
         </Contholder>
     </MenuCont>
