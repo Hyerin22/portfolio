@@ -81,11 +81,11 @@ const Footer = ({
                 </SnsLink>
             </SnsIconCont>
             <FooterText>© Hyerin Cheon Portfolio 2022</FooterText>
-            <PolicyCont>
+            {/* <PolicyCont>
                 <FooterPolicy>Terms of Use</FooterPolicy>
                 <VerLine />
                 <FooterPolicy>Privacy Policy</FooterPolicy>
-            </PolicyCont>
+            </PolicyCont> */}
         </Cont>
     );
 }

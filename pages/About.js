@@ -160,7 +160,7 @@ export default function About() {
               <Header
               marginB='40px'
               marginT='70px'
-              text='Hello I&#39;m Hyerin!' 
+              text='Hello I&#39;m Hyerin&#40;Rin&#41;!' 
               display='none'/>
               <BodyText
               paddingR='0'
