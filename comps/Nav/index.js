@@ -55,7 +55,7 @@ const Nav = ({
                     <NavWeb />
                     <NavDesign />
                     <NavAbout />
-                    <a className="resume" href='/Hyerin_Cheon_Resume.pdf' download>RESUME</a>
+                    <a className="resume" href='/Hyerin_Cheon_Resume.pdf' target="_blank">RESUME</a>
                 </RightBar>
             </NavCont>
         </Cont>
