@@ -99,6 +99,7 @@ const ImgCont = styled.div`
   justify-content: center;
   align-items: center;
 `;
+
 const BottContentCont = styled.div`
   display: flex;
   flex-direction: column;
@@ -133,8 +134,7 @@ const DesignImg = styled.img`
   }
 `;
 const ProjectImg = styled.img`
-  // max-width: 85%;
-  max-width: 100%;
+  width: 100%;
   height: auto; 
 `;
 
