@@ -158,8 +158,8 @@ export default function DigitalPainting() {
         </HeroCont>
         
         <IntroCont className='container'>
-          <IntroHeader className='intro_header'>Photograph Recreation Drawing</IntroHeader>
-          <IntroSub className='intro_sub'>Anya Taylor-Joy</IntroSub>
+          <IntroHeader className='intro_header'>Anya Taylor-Joy</IntroHeader>
+          <IntroSub className='intro_sub'>Photograph Recreation Drawing</IntroSub>
           <IntroBodyText 
             text = "This is a digital painting using Photoshop."
             marginB = "50px"

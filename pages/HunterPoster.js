@@ -152,7 +152,7 @@ export default function DigitalPainting() {
           <IntroHeader className='intro_header'>Hunter Poster</IntroHeader>
           <IntroSub className='intro_sub'>Advertising poster</IntroSub>
           <IntroBodyText 
-            text = 'Advertising Hunter Slogan "For the world outside"'
+            text = 'This is an advertising for Hunter Slogan "For the world outside".'
             marginB = "50px"
           />
           <IntroBodyText 

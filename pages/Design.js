@@ -124,8 +124,8 @@ export default function Graphics() {
           <Projects
             routeTo='/WalkmanIllustration'
             src="/illustPaint.png" 
-            projName="Realistic Illustration"
-            projDesc="Sony Walkman Sports"
+            projName="Sony Walkman Sports"
+            projDesc="Realistic Illustration"
           />
 
         </ProjCont>
