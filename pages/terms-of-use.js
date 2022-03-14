@@ -48,11 +48,6 @@ const ContentCont = styled.div`
   }
 `;
 
-const SectionCont = styled.div`
-  margin-top: 70px;
-  justify-content: center;
-  align-items: center;
-`;
 
 const HeaderText = styled.p`
   font-size:40px;
@@ -61,13 +56,8 @@ const HeaderText = styled.p`
   text-underline-offset: 10px;
 `
 
-const ContentText = styled.p`
 
-`
-
-
-
-export default function About() {
+export default function TermsOfUse() {
   const router = useRouter();
     
   return (

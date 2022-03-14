@@ -85,7 +85,7 @@ const Footer = ({
             <PolicyCont>
                 <FooterPolicy className='icons' onClick={()=>router.push('/terms-of-use')}>Terms of Use</FooterPolicy>
                 <VerLine />
-                <FooterPolicy>Privacy Policy</FooterPolicy>
+                <FooterPolicy className='icons' onClick={()=>router.push('/privacy-policy')}>Privacy Policy</FooterPolicy>
             </PolicyCont>
         </Cont>
     );
