@@ -7,7 +7,7 @@ const Cont = styled.div`
   
 const Text = styled.p`
 font-family: 'M PLUS 1p', sans-serif;
-font-size: 18px;
+font-size: ${props=>props.size};
 display: inline-block;
 overflow: hidden;
 white-space: ${props=>props.wspace};
@@ -41,7 +41,8 @@ const BodyText = ({
   marginL = "0%",
   paddingR = "10%",
   marginB ="50px",
-  text="bodyyyy"
+  text="bodyyyy",
+  size = "18px"
 })=>{
     
     return (
@@ -52,6 +53,7 @@ const BodyText = ({
             fcolor={fcolor}
             marginB={marginB}
             paddingR={paddingR}
+            size={size}
           >{text}</Text>
         </Cont>
     );

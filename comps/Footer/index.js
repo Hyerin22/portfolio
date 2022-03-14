@@ -50,6 +50,7 @@ const FooterPolicy = styled.a`
     font-size: 14px;
     font-weight: 400;
     color: #1E1B18;
+    cursor: pointer
 `;
 
 const VerLine = styled.div`
@@ -81,11 +82,11 @@ const Footer = ({
                 </SnsLink>
             </SnsIconCont>
             <FooterText>© Hyerin Cheon Portfolio 2022</FooterText>
-            {/* <PolicyCont>
-                <FooterPolicy>Terms of Use</FooterPolicy>
+            <PolicyCont>
+                <FooterPolicy className='icons' onClick={()=>router.push('/terms-of-use')}>Terms of Use</FooterPolicy>
                 <VerLine />
                 <FooterPolicy>Privacy Policy</FooterPolicy>
-            </PolicyCont> */}
+            </PolicyCont>
         </Cont>
     );
 }
