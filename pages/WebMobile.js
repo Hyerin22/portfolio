@@ -109,7 +109,7 @@ export default function WebMobile() {
           routeTo='/Mylandlord'
           src="/mylandlord.svg" 
           projName="MyLandlord"
-          projDesc="Landlord Review Web Application"
+          projDesc="Landlord Review - Website"
         />
 
         <Projects
@@ -120,14 +120,14 @@ export default function WebMobile() {
           routeTo='/BuddingWriters'
           src="/buddingWriters.svg" 
           projName="Budding Writers"
-          projDesc="Book Cafe Website"
+          projDesc="Book Cafe - Website"
         />
 
         <Projects
           routeTo='/Natiive'
           src="/natiive.svg" 
           projName="Natiive"
-          projDesc="Indigenous Territory Education Web Applicatioin
+          projDesc="Indigenous Territory Education - Web Applicatioin
           "
         />
 

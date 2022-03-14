@@ -240,7 +240,7 @@ export default function Wecycle() {
         </SectionCont>
 
         <BottContentCont>
-          <SubText text="Process" marginL="0"/>
+          <SubText text="LoFi & HiFi Prototypes" marginL="0"/>
           <ImgCont>
             <ProjectImg src="buddingProcess.png" />
           </ImgCont>

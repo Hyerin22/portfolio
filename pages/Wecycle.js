@@ -164,7 +164,7 @@ export default function Wecycle() {
         
         <IntroCont className='container'>
           <IntroHeader className='intro_header'>WeCycle</IntroHeader>
-          <IntroSub className='intro_sub'>Recycling Education App</IntroSub>
+          <IntroSub className='intro_sub'>Recycling Education Web Application</IntroSub>
           <IntroBodyText 
             text = "Wecycle is an education app for children, their parents, and teachers. Through this app, children can learn how to recycle with interactive animations and quizzes."
             marginB = "50px"
@@ -261,14 +261,14 @@ export default function Wecycle() {
         </SectionCont>
 
         <SectionCont>
-          <SubText text = "Wireframe" marginL='0'/>
+          <SubText text = "Wireframes" marginL='0'/>
           <ImgCont>
             <ProjectImg src="wecycle_wireframe.svg" />
           </ImgCont>
         </SectionCont>
 
         <BottContentCont>
-          <SubText text = "Final" marginL='0'/>
+          <SubText text = "HiFi Prototype" marginL='0'/>
           <ImgCont>
             <ProjectImg src="wecycleFinal.svg" />
           </ImgCont>

@@ -160,7 +160,7 @@ export default function Home() {
             routeTo='/Mylandlord'
             src="/mylandlord.svg" 
             projName="MyLandlord"
-            projDesc="Landlord Review Web Application"
+            projDesc="Landlord Review - Website"
           />
 
           <Projects

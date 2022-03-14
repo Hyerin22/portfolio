@@ -188,14 +188,14 @@ export default function Wecycle() {
         </SectionCont>
 
         <SectionCont>
-          <SubText text = "Wireframe" marginL="0" />
+          <SubText text = "Wireframes" marginL="0" />
           <ImgCont>
             <ProjectImg src="natiiveWF.svg" />
           </ImgCont>
         </SectionCont>
 
         <BottContentCont>
-          <SubText text="Final" marginL="0"/>
+          <SubText text="HiFi Prototype" marginL="0"/>
           <ImgCont>
             <ProjectImg src="natiiveFinal.svg" />
           </ImgCont>

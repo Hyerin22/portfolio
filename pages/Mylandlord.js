@@ -161,9 +161,9 @@ export default function Wecycle() {
         
         <IntroCont className='container'>
           <IntroHeader className='intro_header'>MyLandlord</IntroHeader>
-          <IntroSub className='intro_sub'>Landlord Review Web Application</IntroSub>
+          <IntroSub className='intro_sub'>Landlord Review Website</IntroSub>
           <IntroBodyText 
-            text = "MyLandlord is a web application that is targeted towards residents looking to find an ideal Landlord to rent from in Greater Vancouver."
+            text = "MyLandlord is a website that is targeted towards residents looking to find an ideal Landlord to rent from in Greater Vancouver."
             marginB = "50px"
           />
           <IntroBodyText 
@@ -263,7 +263,7 @@ export default function Wecycle() {
         </SectionCont>
 
         <SectionCont>
-          <SubText text = "Final of the main pages" marginL="0" />
+          <SubText text = "HiFi Prototype" marginL="0" />
           <ImgCont>
             <ProjectImg src="mylandlordFinal.svg" />
           </ImgCont>
