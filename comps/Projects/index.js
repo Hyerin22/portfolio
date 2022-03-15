@@ -64,7 +64,7 @@ const Projects = ({
     const router = useRouter();
     return (
         <Cont 
-            className="projects"
+            className="projects2"
             onClick={() => router.push(routeTo)} 
         >
             <ProjImg src={src} className="scale"/>

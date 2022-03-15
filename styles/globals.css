@@ -255,7 +255,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
     margin-top: 2%;
   }
 
-  .projects {
+  .projects, .projects2 {
     width: 327px;
   }
   .blueText {
@@ -338,6 +338,9 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
   .projects {
     width: 227px;
   }
+  .projects2 {
+    width: 327px;
+  }
   .blueText {
     font-size: 32px;
   }
@@ -388,6 +391,9 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
   }
   .projects {
     width: 300px;
+  }
+  .projects2 {
+    width: 470px;
   }
   .heroCont {
     display: flex;
@@ -445,9 +451,10 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
     margin-left: auto;
     margin-right: auto;
   }
-  .projects {
+  .projects, .projects2 {
     width: 100%;
   }
+
   .heroCont {
     display: flex;
     flex: 1;
