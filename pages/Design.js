@@ -42,9 +42,16 @@ const HeroCont = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 55px;
+  // margin-top: 55px;
   flex-direction: column;
-  margin-bottom: 60px;
+  // margin-bottom: 60px;
+
+  @media (min-width: 768px){
+    height: 350px;
+  }
+  @media (min-width: 992px){
+    height: 350px;
+  }
 `; 
 
 const IconCont = styled.a`
@@ -52,6 +59,9 @@ const IconCont = styled.a`
 `;
 
 const HeroImg = styled.img`
+  @media (min-width:481px) and (max-width: 991px){
+    width:50%;
+  }
 `;
 const BottCont = styled.div`
 `;
@@ -81,8 +91,8 @@ export default function Graphics() {
 
       {/* HeroImage */}
       <HeroCont>
-        <HeroImg className="page_hero" src="/Graphics.svg" />
-        <IconCont className='scroll_big_screen' href="#go-down">
+        <HeroImg className="page_hero" src="/otherworks.svg" />
+        {/* <IconCont className='scroll_big_screen' href="#go-down">
           <FontAwesomeIcon 
             className="arrow_scale arrow" 
             icon={faChevronDown} 
@@ -90,40 +100,40 @@ export default function Graphics() {
             color="#2B6FC7"
             width={20}
             />
-        </IconCont>
-        <Header 
+        </IconCont> */}
+        {/* <Header 
         text='Projects' 
         marginT='100px'
-        />
+        /> */}
       </HeroCont>
 
       {/* Contents */}
       <BottCont className="bottCont container">
 
         {/* Projects here */}
-        <ProjCont className="grid"> 
+        <ProjCont className="three-grid"> 
 
           <Projects
             routeTo='/DigitalPainting'
-            src="/painting.png" 
+            src="/painting2.svg" 
             projName="Anya Taylor-Joy"
             projDesc="Photograph Recreation Drawing"
           />
           <Projects
             routeTo='/HunterPoster'
-            src="/hunter_2.png" 
+            src="/hunter_3.png" 
             projName="Hunter Poster"
             projDesc="Advertising poster"
           />
           <Projects
             routeTo='/Epub'
-            src="/ePub.svg" 
+            src="/ePub2.svg" 
             projName="Let&#39;s Save A Life!"
             projDesc="InDesign E-publication"
           />
           <Projects
             routeTo='/WalkmanIllustration'
-            src="/illustPaint.png" 
+            src="/illustPaint2.png" 
             projName="Sony Walkman Sports"
             projDesc="Realistic Illustration"
           />
