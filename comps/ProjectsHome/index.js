@@ -55,7 +55,7 @@ const ProjDesc = styled.p`
 
 
 
-const Projects = ({
+const ProjectsHome = ({
     src="/wecycle.svg",
     projName="WeCycle",
     projDesc="Recycling Education - Web Application",
@@ -64,7 +64,7 @@ const Projects = ({
     const router = useRouter();
     return (
         <Cont 
-            className="projects"
+            className="projects2"
             onClick={() => router.push(routeTo)} 
         >
             <ProjImg src={src} className="scale"/>
@@ -74,4 +74,4 @@ const Projects = ({
     );
 }
 
-export default Projects;
+export default ProjectsHome;

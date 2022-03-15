@@ -7,6 +7,7 @@ import Nav from '../comps/Nav';
 import Hamburger from '../comps/Hamburger';
 import HeroText from '../comps/HeroText';
 import Projects from '../comps/Projects';
+import ProjectsHome from '../comps/ProjectsHome';
 import Footer from '../comps/Footer';
 import Header from '../comps/Header';
 
@@ -156,14 +157,14 @@ export default function Home() {
 
         {/* Projects here */}
         <ProjCont className="grid"> 
-          <Projects
+          <ProjectsHome
             routeTo='/Mylandlord'
             src="/mylandlord.svg" 
             projName="MyLandlord"
             projDesc="Landlord Review - Website"
           />
 
-          <Projects
+          <ProjectsHome
             routeTo='/Wecycle'
           />
         </ProjCont>
