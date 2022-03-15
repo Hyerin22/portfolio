@@ -35,8 +35,8 @@ const GifBio = styled.img`
 `;
 
 const AnimatedTextCont = styled.div`
-    height:70px;
-    overflow: hidden;
+    // height:70px;
+    // overflow: hidden;
 `;
 const AnimatedText = styled.div`
     font-family: Mplus 1p;
@@ -44,18 +44,19 @@ const AnimatedText = styled.div`
     font-size: 55px;
     // line-height: 140%;
     color: #1E1B18;
+    margin:0;
 
     @media (max-width: 480px){
         font-size: 32px;
-        height: 80px;
+        // height: 80px;
     }
     @media (min-width: 768px){
         font-size: 32px;
-        height: 85px;
+        // height: 85px;
     }
     @media (min-width: 992px){
         font-size: 44px;
-        height:90px;
+        // height:90px;
     }
 `;
 
@@ -69,8 +70,8 @@ const HeroText = ({
         <Cont>
             <Text>Hello, <br/> I am <span className="blueText">Hyerin Cheon</span></Text>
             <AnimatedTextCont>
-                <AnimatedText className='text_slide'>a Front End Developer</AnimatedText>
-                <AnimatedText className='text_slide'>with UX/UI Design Knowledge</AnimatedText>
+                <AnimatedText>a Front End Developer</AnimatedText>
+                <AnimatedText>with UX/UI Design Knowledge</AnimatedText>
             </AnimatedTextCont>
         </Cont>
     );
