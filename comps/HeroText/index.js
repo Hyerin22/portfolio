@@ -70,7 +70,7 @@ const HeroText = ({
             <Text>Hello, <br/> I am <span className="blueText">Hyerin Cheon</span></Text>
             <AnimatedTextCont>
                 <AnimatedText className='text_slide'>a Front End Developer</AnimatedText>
-                <AnimatedText className='text_slide'>a UX/UI Designer</AnimatedText>
+                <AnimatedText className='text_slide'>with UX/UI Design Knowledge</AnimatedText>
             </AnimatedTextCont>
         </Cont>
     );

@@ -42,8 +42,14 @@ const HeroCont = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 55px;
   flex-direction: column;
+
+  @media (min-width: 768px){
+    height: 350px;
+  }
+  @media (min-width: 992px){
+    height: 350px;
+  }
 `; 
 
 const IconCont = styled.a`
@@ -51,18 +57,12 @@ const IconCont = styled.a`
 `;
 
 const HeroImg = styled.img`
-  
+  @media (min-width:481px) and (max-width: 991px){
+    width:60%;
+  }
 `;
 
 const ContentCont = styled.div`
-  margin-top: 150px;
-  
-  @media screen and (max-width: 480px) {
-    margin-top: 30px;
-  }
-  @media (min-width: 481px) and (max-width: 991px) {
-    margin-top: 40px;
-  }
 `;
 
 const SectionCont = styled.div`
@@ -136,8 +136,8 @@ export default function About() {
 
       {/* HeroImage */}
       <HeroCont>
-        <HeroImg className="page_hero" src="/About.svg" />
-        <IconCont className='scroll_big_screen' href="#about-down">
+        <HeroImg className="page_hero" src="/About2.svg" />
+        {/* <IconCont className='scroll_big_screen' href="#about-down">
           <FontAwesomeIcon 
             className="arrow_scale arrow" 
             icon={faChevronDown} 
@@ -145,7 +145,7 @@ export default function About() {
             color="#2B6FC7"
             width={20}
             />
-        </IconCont>
+        </IconCont> */}
       </HeroCont>
 
       {/* Contents */}
