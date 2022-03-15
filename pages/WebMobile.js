@@ -43,17 +43,25 @@ const HeroCont = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 55px;
+  // margin-top: 55px;
   flex-direction: column;
-  margin-bottom: 60px;
+  // margin-bottom: 60px;
+  
+
+  @media (min-width: 768px){
+    height: 350px;
+  }
+  @media (min-width: 992px){
+    height: 350px;
+  }
 
 `; 
 
-const IconCont = styled.a`
-  text-decoration: none;
-`;
 
 const HeroImg = styled.img`
+@media (min-width:481px) and (max-width: 991px){
+  width:50%;
+}
 `;
 const BottCont = styled.div`
 `;
@@ -82,8 +90,8 @@ export default function WebMobile() {
 
       {/* HeroImage */}
       <HeroCont>
-        <HeroImg className="page_hero" src="/WebMobile2.svg" />
-        <IconCont className='scroll_big_screen' href="#go-down">
+        <HeroImg className="page_hero" src="/WebMobile3.svg" />
+        {/* <IconCont className='scroll_big_screen' href="#go-down">
           <FontAwesomeIcon 
             className="arrow_scale arrow" 
             icon={faChevronDown} 
@@ -91,41 +99,42 @@ export default function WebMobile() {
             color="#2B6FC7"
             width={20}
             />
-        </IconCont>
-        <Header 
+        </IconCont> */}
+        {/* <Header 
         text='Projects' 
-        marginT='100px'
-        />
+        marginT='10px'
+        /> */}
       </HeroCont>
 
       {/* Contents */}
       <BottCont className="bottCont container">
 
         {/* Projects here */}
-        <ProjCont className="grid"> 
+        <ProjCont className="three-grid"> 
 
 
         <Projects
           routeTo='/Mylandlord'
-          src="/mylandlord.svg" 
+          src="/mylandlord2.svg" 
           projName="MyLandlord"
           projDesc="Landlord Review - Website"
         />
 
         <Projects
           routeTo='/Wecycle'
+          src='/wecycle2.svg'
         />
         
         <Projects
           routeTo='/BuddingWriters'
-          src="/buddingWriters.svg" 
+          src="/buddingWriters2.svg" 
           projName="Budding Writers"
           projDesc="Book Cafe - Website"
         />
 
         <Projects
           routeTo='/Natiive'
-          src="/natiive.svg" 
+          src="/natiive2.svg" 
           projName="Natiive"
           projDesc="Indigenous Territory Education - Web Applicatioin
           "

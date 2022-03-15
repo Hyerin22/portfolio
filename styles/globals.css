@@ -33,6 +33,9 @@ a {
 .grid {
   display: grid;
 }
+.three-grid {
+  display: grid;
+}
 
 .intro {
   grid-area: ir;
@@ -300,6 +303,9 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
   .grid{
     grid-template-columns: 1fr;
   }
+  .three-grid{
+    grid-template-columns: 1fr;
+  }
 
   .arrow {
     display: none;
@@ -326,8 +332,11 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
     flex: 1;
     flex-direction: row;
   }
+  .page_hero{
+    /* width: 50%; */
+  }
   .projects {
-    width: 327px;
+    width: 227px;
   }
   .blueText {
     font-size: 32px;
@@ -336,6 +345,12 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 5%;
     grid-row-gap: 3%;
+  }
+
+  .three-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2%;
+    grid-row-gap: 2%;
   }
 
   .intro_header {
@@ -372,7 +387,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
     margin-right: auto;
   }
   .projects {
-    width: 470px;
+    width: 300px;
   }
   .heroCont {
     display: flex;
@@ -386,6 +401,11 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 5%;
     grid-row-gap: 3%;
+  }
+  .three-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2%;
+    grid-row-gap: 2%;
   }
 
   .about_prof_grid {
@@ -436,6 +456,12 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
   .blueText {
     font-size: 55px;
   }
+  .three-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3%;
+    grid-row-gap: 3%;
+  }
+
   .grid {
     grid-template-columns: 1fr 1fr;
     column-gap: 5%;

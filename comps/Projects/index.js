@@ -26,17 +26,30 @@ const ProjName = styled.p`
     @media screen and (max-width: 480px) {
         font-size: 20px;
     }
+    @media (min-width: 768px){
+        font-size: 18px;
+    }
+    @media (min-width: 992px){
+        font-size: 25px;
+      }
 `;
 const ProjDesc = styled.p`
     font-family: 'M PLUS 1p', sans-serif;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
     color: #4B4B4B;
+    margin-top: 10px;
 
     @media screen and (max-width: 480px) {
         font-size: 16px;
         margin-top: 0;
     }
+    @media (min-width: 768px){
+        font-size: 14px;
+    }
+    @media (min-width: 992px){
+        font-size: 17px;
+      }
 `;
 
 

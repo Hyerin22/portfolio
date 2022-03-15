@@ -158,13 +158,14 @@ export default function Home() {
         <ProjCont className="grid "> 
           <Projects
             routeTo='/Mylandlord'
-            src="/mylandlord.svg" 
+            src="/mylandlord2.svg" 
             projName="MyLandlord"
             projDesc="Landlord Review - Website"
           />
 
           <Projects
             routeTo='/Wecycle'
+            src="/wecycle2.svg" 
           />
         </ProjCont>
       </BottCont>
