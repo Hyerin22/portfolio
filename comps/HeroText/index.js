@@ -62,18 +62,16 @@ const AnimatedText = styled.div`
     }
 `;
 
-const TextLine = styled.span`
-    display: ${(props) => props.display};
-`;
+
 
 
 const HeroText = ({
-    display="block"
+    
 })=>{
     
     return (
         <Cont>
-            <Text>Hello, <br/> I am <TextLine display={display} className="blueText">Hyerin Cheon</TextLine></Text>
+            <Text>Hello, <br/> I am <span className="blueText">Hyerin Cheon</span></Text>
             <AnimatedTextCont>
                 <AnimatedText>a Front End Developer</AnimatedText>
                 <AnimatedText>with UX/UI Design Knowledge</AnimatedText>
