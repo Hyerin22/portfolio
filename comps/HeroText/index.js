@@ -27,6 +27,8 @@ const Text = styled.p`
     @media (min-width: 992px){
         font-size: 44px;
     }
+
+
 `;
 
 const GifBio = styled.img`
@@ -60,15 +62,18 @@ const AnimatedText = styled.div`
     }
 `;
 
+const TextLine = styled.span`
+    display: ${(props) => props.display};
+`;
 
 
 const HeroText = ({
-
+    display="block"
 })=>{
     
     return (
         <Cont>
-            <Text>Hello, <br/> I am <span className="blueText">Hyerin Cheon</span></Text>
+            <Text>Hello, <br/> I am <TextLine display={display} className="blueText">Hyerin Cheon</TextLine></Text>
             <AnimatedTextCont>
                 <AnimatedText>a Front End Developer</AnimatedText>
                 <AnimatedText>with UX/UI Design Knowledge</AnimatedText>

@@ -3,8 +3,13 @@ import styled from 'styled-components';
 import {useRouter} from 'next/router';
 import { motion } from "framer-motion";
 
+import { ColorPalette } from '@styled-icons/ionicons-outline/ColorPalette'
+import { Code } from '@styled-icons/bootstrap/Code'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+
 
 import Nav from '../comps/Nav';
 import Hamburger from '../comps/Hamburger';
@@ -52,8 +57,10 @@ const HeroCont = styled.div`
   }
 `; 
 
-const IconCont = styled.a`
-  text-decoration: none;
+const SkillCont = styled.div`
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
 `;
 
 const HeroImg = styled.img`
@@ -70,10 +77,16 @@ const SectionCont = styled.div`
   justify-content: center;
   align-items: center;
 `;
+const MidCont = styled.div`
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 60px;
+`;
 
 const ContentContGrid = styled.div`
   justify-content: center;
-  align-items: center;
   width: 100%;
 
 `;
@@ -104,12 +117,42 @@ const ProfileImg = styled.img`
 const RightCont = styled.div`
   justify-content: center;
   align-items: center;
+  
 
-  @media screen and (max-width: 480px) {
-    font-size: 25px;
-  }
+  // @media screen and (max-width: 480px) {
+  //   font-size: 25px;
+  // }
   @media (max-width: 834px){
     text-align: center;
+  }
+`;
+
+const CodeIcon = styled(Code)`
+  color: #2B6FC7;
+  width: 40px;
+  margin-bottom: 10px;
+`;
+
+const PaletteIcon = styled(ColorPalette)`
+  color: #2B6FC7;
+  width: 40px;
+  margin-bottom: 10px;
+`;
+
+const SnsIconCont = styled.div`
+  display: flex;
+
+  @media (max-width: 834px){
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+`;
+const SnsLink = styled.a`
+  margin-right: 70px;
+  font-size: 18px;
+
+  @media (max-width: 834px){
+    margin-right: 0px;
   }
 `;
 
@@ -159,7 +202,7 @@ export default function About() {
             <RightCont>
               <Header
               marginB='40px'
-              marginT='70px'
+              marginT='25px'
               text='Hello I&#39;m Hyerin&#40;Rin&#41;!' 
               display='none'/>
               <BodyText
@@ -174,11 +217,45 @@ export default function About() {
               paddingR='0'
               marginB='30px'
               text="I enjoy spending time with people, playing the piano and taking part in outdoor activities. If you want to know more about me, feel free to send me an email! "/>
+              <SnsIconCont>
+                <SnsLink target="_blank" href="https://www.linkedin.com/in/hyerin-cheon/">
+                    <FontAwesomeIcon className="icons" icon={faLinkedinIn} size="lg" color="#2E3A59" width={20}/>
+                </SnsLink>
+                <SnsLink href="mailto:hlyni22@gmail.com">
+                    <FontAwesomeIcon className="icons" icon={faEnvelope} size="lg" color="#2E3A59" width={20}/>
+                </SnsLink>
+                <SnsLink href="https://github.com/Hyerin22">
+                    <FontAwesomeIcon className="icons" icon={faGithub} size="lg" color="#2E3A59" width={20}/>
+                </SnsLink>
+              </SnsIconCont>
             </RightCont>
           </ContentContGrid>
         </SectionCont>
+        {/* capability */}
+        <MidCont>
+          <Header 
+            text='Capabilities' 
+            marginT='150px' 
+            display='none'/>
+          <ContentContGrid className='about_skill_grid container'>
+            <SkillCont>
+              <CodeIcon />
+              <BodyText
+                text='HTML5, CSS3, Next.js, React, React Native, Expo, JavaScript, jQuery, SASS, WordPress, Github, MongoDB, PHP, MySQL, Docker, Storybook'
+              />
+            </SkillCont>
+            <SkillCont>
+              <PaletteIcon />
+              <BodyText
+                text='Figma, Adobe Creative Cloud (Photoshop, Illustration, InDesign, AfterEffects, Premiere Pro)'
+              />
+            </SkillCont>
+
+          </ContentContGrid>
+        </MidCont>
       </ContentCont>
-      <Footer />
+      <Footer 
+        margint='30px'/>
     </Cont>
   )     
 }

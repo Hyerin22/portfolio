@@ -12,7 +12,7 @@ const Cont = styled.div`
     justify-content:center;
     align-items: center;
     margin-bottom:40px;
-    margin-top: 120px;
+    margin-top: ${(props) => props.margint};
 `
 
 const Logo = styled.img`
@@ -64,11 +64,11 @@ const VerLine = styled.div`
 
 
 const Footer = ({
-
+    margint="120px"
 })=>{
     const router = useRouter();
     return (
-        <Cont>
+        <Cont margint={margint}>
             <Logo src="/Logo.svg" onClick={() => router.push("/")}/>
             <SnsIconCont>
                 <SnsLink target="_blank" href="https://www.linkedin.com/in/hyerin-cheon/">

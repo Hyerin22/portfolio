@@ -419,6 +419,11 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 5%;
   }
+  .about_skill_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10%;
+  }
 
   .intro_header {
     font-size: 55px !important;
