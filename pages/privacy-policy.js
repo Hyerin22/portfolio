@@ -159,7 +159,7 @@ export default function PrivacyPolicy() {
         />
         <BodyText
           marginB='20px'
-          text='March 2022'
+          text='April 2022'
         />
       </ContentCont>
       <Footer />

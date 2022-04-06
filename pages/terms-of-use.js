@@ -120,7 +120,7 @@ export default function TermsOfUse() {
         <BodyText
           size='14px'
           marginB='20px'
-          text='Last Update: March 2022'
+          text='Last Update: April 2022'
         />
         <BodyText
           size='14px'
