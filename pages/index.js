@@ -68,13 +68,11 @@ const ArrowCont = styled.div`
 `;
 
 const LeftCont = styled.div`
-  // display:flex;
   box-sizing: border-box;
   width:100%;
 `;
 
 const RightCont = styled.div`
-  // display:flex;	
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
@@ -91,14 +89,11 @@ const HeroImg = styled.img`
 `;
 
 const BottCont = styled.div`
-  // padding-left: 8%;
-  // padding-right: 8%;
+
 `;
 
 
 const ProjCont = styled.div`
-  // display:flex;
-  // flex-wrap: wrap;
   justify-content: center;
 `;
 
@@ -110,7 +105,7 @@ export default function Home() {
   return (
     <Cont
       initial={{opacity: 0}} 
-      animate={{opacity: 1, transition:{delay: 0.25}}}
+      animate={{opacity: 1, transition:{delay: 0.5}}}
       className="Cont">
 
       {/* Top Navigation */}
@@ -137,7 +132,7 @@ export default function Home() {
         <ArrowCont className='arrow_top'>
           <IconCont className='scroll_big_screen' href="#go-down">
             <FontAwesomeIcon 
-              className="arrow_scale arrow" 
+              className="arrow_ani arrow" 
               icon={faChevronDown} 
               size="2x" 
               color="#2B6FC7"

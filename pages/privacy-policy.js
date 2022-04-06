@@ -67,7 +67,7 @@ export default function PrivacyPolicy() {
   return (
     <Cont
       initial={{opacity: 0}} 
-      animate={{opacity: 1, transition:{delay: 0.25}}}>
+      animate={{opacity: 1, transition:{delay: 0.5}}}>
       {/* TopNav */}
       <NavCont className="myLogo">
         <LogoCont onClick={() => router.push("/")}>

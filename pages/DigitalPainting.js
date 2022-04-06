@@ -140,7 +140,7 @@ export default function DigitalPainting() {
   return (
     <Cont 
       initial={{opacity: 0}} 
-      animate={{opacity: 1, transition:{delay: 0.25}}}
+      animate={{opacity: 1, transition:{delay: 0.5}}}
       className="center">
       {/* TopNav */}
       <NavCont className="myLogo">
