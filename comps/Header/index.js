@@ -48,7 +48,6 @@ const Header = ({
     return (
         <Cont >
           <Text
-            id="go-down"
             fcolor={fcolor}
             marginB={marginB}
             marginT={marginT}

@@ -29,7 +29,6 @@ const NavCont = styled.div`
   box-sizing: border-box;
   flex-direction: row;
   box-sizing: border-box;
-  position: relative;
 `;
 
 const LogoCont =styled.div`
@@ -132,6 +131,7 @@ export default function Home() {
         <ArrowCont className='arrow_top'>
           <IconCont className='scroll_big_screen' href="#go-down">
             <FontAwesomeIcon 
+              id="go-down"
               className="arrow_ani arrow" 
               icon={faChevronDown} 
               size="2x" 

@@ -33,7 +33,7 @@ a {
   position: absolute;
   width: 100%;
   height: 25%;
-  z-index: -100;
+  z-index: -1;
   top: 50px;
   left: 0;
   background-color: #ECE9E6;
@@ -127,6 +127,37 @@ a {
   /* -webkit-transform: scale(1.5); Safari 3-8 */
   /* transform: scale(1.5); 
 } */
+
+/* Nav */
+.myLogo{
+  background-color: white;
+  position: sticky;
+  -webkit-position: sticky;
+  top: 0px;
+  /* left: 0;  */
+  z-index: 1000;
+  width: 100%;
+  height: 13%;
+  box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+}
+.myLogo::before,
+.myLogo::after {
+  content: '';
+  display: block;
+  position: sticky;
+  -webkit-position: sticky;
+}
+
+.myLogo::before {
+  top: 48px; 
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+}
+
+.myLogo::after {
+  background: linear-gradient(white 10%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.4) 70%, transparent);
+  top: 0;
+  z-index: 2;
+}
 
 /* Home Text SlideUp */
 .text_slide:first-child{
@@ -291,8 +322,8 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
     display: block;
   }
   .myLogo {
-    margin-left: 6%;
-    margin-top: 2%;
+    /* margin-left: 6%;
+    margin-top: 2%; */
   }
 
   .projects, .projects2 {
