@@ -274,6 +274,21 @@ export default function Wecycle() {
           </ImgCont>
         </BottContentCont>
 
+        <SectionCont>
+          <SubText text="Key Takeaways" marginL="0"/>
+          <BodyText 
+            marginB='0'
+            text = "We created Quiz pages for helping students to understand the concept and testing their knowledge of recycling by giving them interactive interface. To encourage students to act, we created a Take Action page that can explore volunteering." 
+          />
+        </SectionCont>
+        <SectionCont>
+          <SubText text="Challenges" marginL="0"/>
+          <BodyText 
+            marginB='0'
+            text = "This project was completed online because we were working at a time when the pandemic was in progress. Since we were in the different time zones, we needed to consider the reasonable times to have a meeting for efficiency outcomes. Through countless hours of meetings and work, we have successfully completed a fully functioning web application that satisfied both users and professors." 
+          />
+        </SectionCont>
+
         <Footer />
       </ContentCont>
     </Cont>
