@@ -152,6 +152,12 @@ export default function Home() {
 
         {/* Projects here */}
         <ProjCont className="grid"> 
+        <ProjectsHome
+          routeTo='/VillagerWishlist'
+          src="/wishlist.svg" 
+          projName="Villager Wishlist"
+          projDesc="Wishlist Application - Web Applicatioin"
+        />
           <ProjectsHome
             routeTo='/Mylandlord'
             src="/mylandlord.svg" 
@@ -159,9 +165,6 @@ export default function Home() {
             projDesc="Landlord Review - Website"
           />
 
-          <ProjectsHome
-            routeTo='/Wecycle'
-          />
         </ProjCont>
       </BottCont>
       <Footer />

@@ -7,13 +7,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { Router } from 'next/router';
 
-const Cont = styled.button`
+const Cont = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
   background-color:#2B6FC7;
   border-radius: 35px;
   padding: 0;
+  margin-right: ${props=>props.marginR};
 
   border: none;
   cursor: pointer;
@@ -35,7 +36,7 @@ const Cont = styled.button`
   }
 `;
 
-const Link = styled.a`
+const Link = styled.p`
   font-family: 'M PLUS 1p', sans-serif;
   font-size: 18px;
   display: inline;
@@ -59,19 +60,21 @@ const Link = styled.a`
 
 
 const Button = ({
-  routeTo ="/",
   text="GitHub",
   paddingLeft = "5%",
-  href="/"
+  href="/",
+  marginR ="0px"
 })=>{
   const router = useRouter();
   return (
       <Cont 
+        marginR={marginR}
+        target="_blank"
         className="scale button_scale" 
-        onClick = {() => router.push(routeTo)} 
+        href={href}
       >
         <FontAwesomeIcon className="gitHubIcon" icon={faGithub} size="2x" color="#FFFFFF"/>
-        <Link href={href} paddingLeft={paddingLeft}>{text}</Link>
+        <Link paddingLeft={paddingLeft}>{text}</Link>
       </Cont>
   );
 }

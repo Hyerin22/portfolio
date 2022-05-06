@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import {useRouter} from 'next/router';
 
 
-const Cont = styled.div`
+const Cont = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,7 +31,7 @@ const Cont = styled.div`
   }
 `;
 
-const Link = styled.a`
+const Link = styled.p`
   font-family: 'M PLUS 1p', sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -62,17 +62,16 @@ const DownloadButton = ({
   bgColor="#2B6FC7",
   fColor="#FFFFFF"
 })=>{
-  const router = useRouter();
   return (
       <Cont 
         className="scale button_scale live_link"
         marginLeft={marginLeft} 
-        onClick = {() => router.push(routeTo)}
+        href={href}
+        target='_blank'
         butBorder={butBorder}
         bgColor={bgColor}
         >
         <Link 
-        href={href}
         fColor={fColor}
         >{text}</Link>
       </Cont>

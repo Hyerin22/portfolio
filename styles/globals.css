@@ -63,7 +63,7 @@ a {
 
 
 /* Layout */
-.grid {
+.grid, .grid2 {
   display: grid;
 }
 .three-grid {
@@ -378,7 +378,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
     padding: 20px;
   }
 
-  .grid{
+  .grid, .grid2{
     grid-template-columns: 1fr;
   }
   .three-grid{
@@ -426,9 +426,14 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
   .lineAnimation:after{
     top: 23px;
   }
-  .grid {
+  .grid{
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 5%;
+    grid-row-gap: 3%;
+  }
+  .grid2 {
+    grid-template-columns: 1fr ;
+    column-gap: 5%;
     grid-row-gap: 3%;
   }
 
@@ -493,6 +498,11 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
     grid-column-gap: 5%;
     grid-row-gap: 3%;
   }
+  .grid2 {
+    grid-template-columns: 1fr 2fr;
+    column-gap: 5%;
+    grid-row-gap: 3%;
+  }
   .three-grid {
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 2%;
@@ -542,7 +552,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
     margin-right: auto;
   }
   .projects, .projects2 {
-    width: 100%;
+    /* width: 100%; */
   }
 
   .heroCont {
@@ -561,6 +571,11 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
 
   .grid {
     grid-template-columns: 1fr 1fr;
+    column-gap: 5%;
+    grid-row-gap: 3%;
+  }
+  .grid2 {
+    grid-template-columns: 1fr 2fr;
     column-gap: 5%;
     grid-row-gap: 3%;
   }

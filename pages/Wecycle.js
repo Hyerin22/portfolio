@@ -225,7 +225,7 @@ export default function Wecycle() {
       {/* Content Start */}
       <ContentCont className='container'>
         <SectionCont>
-          <SubText text="Ideation" marginL="0"/>
+          <SubText text="Introduction" marginL="0"/>
           <BodyText 
             marginB='0'
             // marginL="8%"

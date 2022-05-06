@@ -107,11 +107,18 @@ export default function WebMobile() {
       </HeroCont>
 
       {/* Contents */}
-      <BottCont className="bottCont container">
+      <BottCont className="container">
 
         {/* Projects here */}
         <ProjCont className="three-grid"> 
 
+
+        <Projects
+          routeTo='/VillagerWishlist'
+          src="/wishlist.svg" 
+          projName="Villager Wishlist"
+          projDesc="Wishlist Application - Web Applicatioin"
+        />
 
         <Projects
           routeTo='/Mylandlord'
@@ -139,6 +146,8 @@ export default function WebMobile() {
           projDesc="Indigenous Territory Education - Web Applicatioin
           "
         />
+
+
 
         </ProjCont>
       </BottCont>

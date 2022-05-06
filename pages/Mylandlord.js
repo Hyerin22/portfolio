@@ -220,7 +220,7 @@ export default function Wecycle() {
       {/* Content Start */}
       <ContentCont className='container'>
         <SectionCont>
-          <SubText text="Ideation" marginL="0"/>
+          <SubText text="Introduction" marginL="0"/>
           <BodyText 
             marginB='0'
             text = "MyLandlords&#39; goal is to be able to help make it easier for residents in Greater Vancouver to find rent by looking for an ideal landlord. With our application, tenants and landlords will be able to communicate with each other and it will allow for tenants to leave honest reviews during their time with the landlord to help other prospective renters." 
@@ -279,7 +279,7 @@ export default function Wecycle() {
         <BottContentCont>
           <SubText text="Challenges" marginL="0"/>
           <BodyText 
-            text = "This project was my first time to collaborate with backend developers. Both teams had different ways and coding styles, making it difficult to work together. However, in this project, I learned how important it is to communicate and check the progress of the team members. Through constant communication, the gap between differences could be reduced." 
+            text = "This project was my first time collaborating with backend developers. Both teams had different ways and coding styles, making it difficult to work together. However, in this project, I learned how important it is to communicate and check the progress of the team members. Through constant communication, the gap between differences could be reduced." 
           />
         </BottContentCont>
         <Footer />
