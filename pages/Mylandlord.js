@@ -269,10 +269,17 @@ export default function Wecycle() {
           </ImgCont>
         </SectionCont>
 
-        <BottContentCont>
-          <SubText text="Conclusion" marginL="0"/>
+        <SectionCont>
+          <SubText text="Key Takeaways" marginL="0"/>
           <BodyText 
-            text = "After making taskmodel, persona, and wireframe, we did four times of user tests. Based on those tests, we designed final prototype, and started to code out our application. With react and next.js, we built the frontend side of the application and connected it to the backend by collaborating with full-stack developers." 
+            text = "After making taskmodel, persona, and wireframe, we did four times of user tests. Based on those tests, we designed final prototype, and started to code out our application. With react and next.js, we built the frontend side of the application and connected it to the backend by collaborating with full-stack developers. We let users find a landlord and go to their profile page to get information or leave reviews." 
+          />
+        </SectionCont>
+
+        <BottContentCont>
+          <SubText text="Challenges" marginL="0"/>
+          <BodyText 
+            text = "This project was my first time to collaborate with backend developers. Both teams had different ways and coding styles, making it difficult to work together. However, in this project, I learned how important it is to communicate and check the progress of the team members. Through constant communication, the gap between differences could be reduced." 
           />
         </BottContentCont>
         <Footer />
