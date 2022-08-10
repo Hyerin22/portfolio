@@ -3,13 +3,12 @@ import styled from 'styled-components';
 import {useRouter} from 'next/router';
 import { motion } from "framer-motion";
 
-import Nav from '../comps/Nav';
-import Hamburger from '../comps/Hamburger';
 import HeroText from '../comps/HeroText';
 import Projects from '../comps/Projects';
 import ProjectsHome from '../comps/ProjectsHome';
 import Footer from '../comps/Footer';
 import Header from '../comps/Header';
+import TopNav from '../comps/TopNav';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
@@ -108,13 +107,7 @@ export default function Home() {
       className="Cont">
 
       {/* Top Navigation */}
-      <NavCont className="myLogo">
-        <LogoCont onClick={() => router.push("/")}>
-          <Logo src="/Logo.svg" />
-        </LogoCont>
-        <Nav />
-        <Hamburger />
-      </NavCont>
+      <TopNav />
 
       {/* Body */}
 
@@ -125,7 +118,7 @@ export default function Home() {
             <HeroText/>
           </LeftCont>
           <RightCont className="flex">
-            <HeroImg className="hero_img" src="/Hero.svg" />
+            <HeroImg className="hero_img" src="/Hero2.svg" />
           </RightCont>
         </HeroCont>
         <ArrowCont className='arrow_top'>

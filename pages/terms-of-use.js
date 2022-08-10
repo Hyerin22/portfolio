@@ -6,10 +6,9 @@ import { motion } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
-import Nav from '../comps/Nav';
-import Hamburger from '../comps/Hamburger';
 import BodyText from '../comps/BodyText';
 import Footer from '../comps/Footer';
+import TopNav from '../comps/TopNav';
 
 const Cont = styled(motion.div)`
   display:flex;
@@ -65,13 +64,7 @@ export default function TermsOfUse() {
       initial={{opacity: 0}} 
       animate={{opacity: 1, transition:{delay: 0.5}}}>
       {/* TopNav */}
-      <NavCont className="myLogo">
-        <LogoCont onClick={() => router.push("/")}>
-          <Logo src="/Logo.svg" />
-        </LogoCont>
-        <Nav />
-        <Hamburger />
-      </NavCont>
+      <TopNav />
 
       {/* Body */}
       {/* Contents */}
@@ -81,7 +74,7 @@ export default function TermsOfUse() {
         <BodyText 
           size='14px'
           marginB='20px'
-          text='Hyerin&#40;Rin&#41; Cheon welcomes you to its Web site. 
+          text='Rina Cheon welcomes you to its Web site. 
           Using this Web site indicates your consent and agreement to be bound 
           by this User Agreement and any policies or practices contained herein.'
         />
@@ -91,24 +84,24 @@ export default function TermsOfUse() {
           text='All content and information &#40;including, but not limited to, code, 
           graphics, photos, guides, promotional materials, press releases, articles, 
           plans, schedules, illustrations, audio clips, and video clips&#41; displayed 
-          on this Web site is owned or licensed by Hyerin&#40;Rin&#41; Cheon 
+          on this Web site is owned or licensed by Rina Cheon 
           and its respective owners, all content on this site is protected by copyright 
           and other intellectual property laws. Any names, titles, logos and designs displayed 
-          on the Web site that contain Hyerin&#40;Rin&#41; Cheon, titles, logos, or brands 
-          are the exclusive property and trademarks of Hyerin&#40;Rin&#41; Cheon or 
+          on the Web site that contain Rina Cheon, titles, logos, or brands 
+          are the exclusive property and trademarks of Rina Cheon or 
           its members. You may not modify, publish, transmit, transfer, sell, reproduce, re-post 
-          or alter any such content. Hyerin&#40;Rin&#41; Cheon hereby grants you a personal, 
+          or alter any such content. Rina Cheon hereby grants you a personal, 
           non-exclusive, non-assignable and non-transferable license to use and display, for home, 
           non-commercial and personal use only, one copy of any content that you may download from 
           this Web site. Any other use or reproduction of this Web site, in whole or in part, will 
-          be considered to be a violation of Hyerin&#40;Rin&#41; Cheon intellectual property 
+          be considered to be a violation of Rina Cheon intellectual property 
           rights.'
         />
         <BodyText
           size='14px'
           marginB='20px'
           text='Your use of this Web site constitutes your agreement to abide 
-          by these terms of use included in this online User Agreement. Hyerin&#40;Rin&#41; Cheon reserves the right
+          by these terms of use included in this online User Agreement. Rina Cheon reserves the right
           to modify, alter or otherwise update this User Agreement at any time.'
         />
         <BodyText
@@ -120,12 +113,12 @@ export default function TermsOfUse() {
         <BodyText
           size='14px'
           marginB='20px'
-          text='Last Update: April 2022'
+          text='Last Update: August 2022'
         />
         <BodyText
           size='14px'
           marginB='20px'
-          text='Hyerin&#40;Rin&#41; Cheon'
+          text='Rina Cheon'
         />
       </ContentCont>
       <Footer />

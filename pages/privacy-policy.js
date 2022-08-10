@@ -6,10 +6,9 @@ import { motion } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
-import Nav from '../comps/Nav';
-import Hamburger from '../comps/Hamburger';
 import BodyText from '../comps/BodyText';
 import Footer from '../comps/Footer';
+import TopNav from '../comps/TopNav';
 
 const Cont = styled(motion.div)`
   display:flex;
@@ -69,13 +68,7 @@ export default function PrivacyPolicy() {
       initial={{opacity: 0}} 
       animate={{opacity: 1, transition:{delay: 0.5}}}>
       {/* TopNav */}
-      <NavCont className="myLogo">
-        <LogoCont onClick={() => router.push("/")}>
-          <Logo src="/Logo.svg" />
-        </LogoCont>
-        <Nav />
-        <Hamburger />
-      </NavCont>
+      <TopNav />
 
       {/* Body */}
       {/* Contents */}
@@ -84,8 +77,8 @@ export default function PrivacyPolicy() {
         <HeaderText>Privacy Policy</HeaderText>
         <BodyText 
           marginB='20px'
-          text='This policy applies to Hyerin&#40;Rin&#41; Cheon Web site only. It is designed 
-          to inform you of how and why Hyerin&#40;Rin&#41; Cheon gathers personal 
+          text='This policy applies to Rina Cheon Web site only. It is designed 
+          to inform you of how and why Rina Cheon gathers personal 
           and non-personal information about you. This policy complies with provisions 
           of the British Columbia Freedom of Information and Protection of Privacy Act.'
         />
@@ -105,7 +98,7 @@ export default function PrivacyPolicy() {
         />
         <BodyText
           marginB='20px'
-          text='Hyerin&#40;Rin&#41; Cheon collects two kinds of information from this Web site'
+          text='Rina Cheon collects two kinds of information from this Web site'
         />
         <BodyText
           marginB='20px'
@@ -117,7 +110,7 @@ export default function PrivacyPolicy() {
         />
         <BodyText
           marginB='20px'
-          text='During normal Web site usage, you can visit this site without communicating any personal information. However, to make use of certain features on this site, such as gift certificates, promotions, subscriptions or newsletters, users may be asked to register with Hyerin&#40;Rin&#41; Cheon Web site. As part of this voluntary registration, Hyerin&#40;Rin&#41; Cheon may request contact information (such as name, mailing address, e-mail address, etc.) and other data required for operating these services. The only way we can collect personal information from you is if you voluntarily provide it. By voluntarily providing this personal information to us by sending us a comment or suggestion, by entering a contest that is posted on this Web site, you will be consenting to the collection, use and distribution of your personal information by Hyerin&#40;Rin&#41; Cheon for the purposes set out. You are under no obligation to provide us with personal information and can access and enjoy many parts of Hyerin&#40;Rin&#41; Cheon Web site without providing us any personal information. Among other things, the following is a representative list of reasons we may ask for your personal information:'
+          text='During normal Web site usage, you can visit this site without communicating any personal information. However, to make use of certain features on this site, such as gift certificates, promotions, subscriptions or newsletters, users may be asked to register with Rina Cheon Web site. As part of this voluntary registration, Rina Cheon may request contact information (such as name, mailing address, e-mail address, etc.) and other data required for operating these services. The only way we can collect personal information from you is if you voluntarily provide it. By voluntarily providing this personal information to us by sending us a comment or suggestion, by entering a contest that is posted on this Web site, you will be consenting to the collection, use and distribution of your personal information by Rina Cheon for the purposes set out. You are under no obligation to provide us with personal information and can access and enjoy many parts of Rina Cheon Web site without providing us any personal information. Among other things, the following is a representative list of reasons we may ask for your personal information:'
         />
         <ul>
           <li>To run contests, select entrants, and choose prize winners;</li>
@@ -136,7 +129,7 @@ export default function PrivacyPolicy() {
         />
         <BodyText
           marginB='20px'
-          text='Hyerin&#40;Rin&#41; Cheon may collect the following non-identifiable information when you visit this Web site:'
+          text='Rina Cheon may collect the following non-identifiable information when you visit this Web site:'
         />
         <ul>
           <li>Your Internet Service Provider (ISP)</li>
@@ -151,11 +144,11 @@ export default function PrivacyPolicy() {
         />
         <BodyText
           marginB='20px'
-          text='By visiting this Web site and voluntarily providing personal information to Hyerin&#40;Rin&#41; Cheon Web site, you agree to the terms of this online User Agreement and the Privacy Policy contained herein. However, We welcome your comments and/or suggestions on improving this Web site and policies.'
+          text='By visiting this Web site and voluntarily providing personal information to Rina Cheon Web site, you agree to the terms of this online User Agreement and the Privacy Policy contained herein. However, We welcome your comments and/or suggestions on improving this Web site and policies.'
         />
         <BodyText
           marginB='20px'
-          text='Hyerin&#40;Rin&#41; Cheon'
+          text='Rina Cheon'
         />
         <BodyText
           marginB='20px'

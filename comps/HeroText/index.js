@@ -66,7 +66,7 @@ const HeroText = ({
     
     return (
         <Cont>
-            <Text>Hello, <br/> I am <span className="lineAnimation">Hyerin Cheon</span></Text>
+            <Text>Hello, <br/> I am <span className="lineAnimation">Rina Cheon</span></Text>
             <AnimatedTextCont>
                 <AnimatedText>a Front End Developer</AnimatedText>
                 <AnimatedText>with UX/UI Design Knowledge</AnimatedText>

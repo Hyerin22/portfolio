@@ -69,7 +69,7 @@ const Footer = ({
     const router = useRouter();
     return (
         <Cont margint={margint}>
-            <Logo src="/Logo.svg" onClick={() => router.push("/")}/>
+            <Logo src="/Rina.svg" onClick={() => router.push("/")}/>
             <SnsIconCont>
                 <SnsLink target="_blank" href="https://www.linkedin.com/in/hyerin-cheon/">
                     <FontAwesomeIcon className="icons" icon={faLinkedinIn} size="lg" color="#2E3A59" width={20}/>
@@ -81,7 +81,7 @@ const Footer = ({
                     <FontAwesomeIcon className="icons" icon={faGithub} size="lg" color="#2E3A59" width={20}/>
                 </SnsLink>
             </SnsIconCont>
-            <FooterText>© Hyerin Cheon Portfolio 2022</FooterText>
+            <FooterText>© Rina Cheon Portfolio 2022</FooterText>
             <PolicyCont>
                 <FooterPolicy className='icons' onClick={()=>router.push('/terms-of-use')}>Terms of Use</FooterPolicy>
                 <VerLine />

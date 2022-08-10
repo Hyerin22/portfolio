@@ -11,11 +11,10 @@ import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 
-import Nav from '../comps/Nav';
-import Hamburger from '../comps/Hamburger';
 import BodyText from '../comps/BodyText';
 import Footer from '../comps/Footer';
 import Header from '../comps/Header';
+import TopNav from '../comps/TopNav';
 
 const Cont = styled(motion.div)`
   display:flex;
@@ -167,13 +166,7 @@ export default function About() {
       initial={{opacity: 0}} 
       animate={{opacity: 1, transition:{delay: 0.5}}}>
       {/* TopNav */}
-      <NavCont className="myLogo">
-        <LogoCont onClick={() => router.push("/")}>
-          <Logo src="/Logo.svg" />
-        </LogoCont>
-        <Nav />
-        <Hamburger />
-      </NavCont>
+      <TopNav />
 
       {/* Body */}
 
@@ -203,7 +196,7 @@ export default function About() {
               <Header
               marginB='40px'
               marginT='25px'
-              text='Hello I&#39;m Hyerin&#40;Rin&#41;!' 
+              text='Hello I&#39;m Rina!' 
               display='none'/>
               <BodyText
               paddingR='0'

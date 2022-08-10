@@ -3,11 +3,9 @@ import styled from 'styled-components';
 import {useRouter} from 'next/router';
 import { motion } from "framer-motion";
 
-import Nav from '../comps/Nav';
-import Hamburger from '../comps/Hamburger';
 import Projects from '../comps/Projects';
 import Footer from '../comps/Footer';
-import Header from '../comps/Header';
+import TopNav from '../comps/TopNav';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
@@ -79,13 +77,7 @@ export default function Graphics() {
       initial={{opacity: 0}} 
       animate={{opacity: 1, transition:{delay: 0.5}}}>
       {/* TopNav */}
-      <NavCont className="myLogo">
-        <LogoCont onClick={() => router.push("/")}>
-          <Logo src="/Logo.svg" />
-        </LogoCont>
-        <Nav />
-        <Hamburger />
-      </NavCont>
+      <TopNav />
 
       {/* Body */}
 

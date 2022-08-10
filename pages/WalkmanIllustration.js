@@ -4,12 +4,11 @@ import {useRouter} from 'next/router';
 import { motion } from "framer-motion";
 
 
-import Nav from '../comps/Nav';
-import Hamburger from '../comps/Hamburger';
 import Footer from '../comps/Footer';
 import BodyText from '../comps/BodyText';
 import SubText from '../comps/SubText';
 import IntroBodyText from '../comps/IntroBodyText';
+import TopNav from '../comps/TopNav';
 
 const Cont = styled(motion.div)`
   display: flex;
@@ -139,13 +138,7 @@ export default function WalkmanIllustration() {
       animate={{opacity: 1, transition:{delay: 0.5}}}
       className="center">
       {/* TopNav */}
-      <NavCont className="myLogo">
-        <LogoCont onClick={() => router.push("/")}>
-          <Logo src="/Logo.svg" />
-        </LogoCont>
-        <Nav />
-        <Hamburger />
-      </NavCont>
+      <TopNav />
 
       {/* Intro Proj */}
       <MainCont className="grid hero_margin">
