@@ -5,8 +5,8 @@ function MyApp({ Component, pageProps }) {
   return <div>
   <Component {...pageProps} />
   <Head>
-    <title>Hyerin Cheon</title>
-    <link rel='icon' href='/Logo.svg' />
+    <title>Rina Cheon</title>
+    <link rel='icon' href='/Rina.svg' />
   </Head>
     
     </div>
