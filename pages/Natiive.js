@@ -10,6 +10,7 @@ import Button from '../comps/Button';
 import SubText from '../comps/SubText';
 import IntroBodyText from '../comps/IntroBodyText';
 import TopNav from '../comps/TopNav';
+import WithoutLogoButton from '../comps/WithoutLogoButton';
 
 const Cont = styled(motion.div)`
   display: flex;
@@ -105,6 +106,11 @@ const ProjectImg = styled.img`
   height: auto; 
 `;
 
+const ButtonCont = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
 
 
 export default function Wecycle() {
@@ -164,9 +170,21 @@ export default function Wecycle() {
             paddingR="0px"
             marginB="15px"
           />
-          <Button 
-          routeTo='https://github.com/Hyerin22/Natiive'
-          href='https://github.com/Hyerin22/Natiive'/>
+          <ButtonCont>
+            <Button 
+            routeTo='https://github.com/Hyerin22/Natiive'
+            href='https://github.com/Hyerin22/Natiive'/>
+            <WithoutLogoButton 
+              marginLeft='13px' 
+              text='Go Live' 
+              href='https://natiive.vercel.app/'
+              routeTo='https://natiive.vercel.app/'
+              bgColor='none'
+              butBorder='3px solid #2B6FC7'
+              fColor='#2B6FC7'
+            />
+
+          </ButtonCont>
         </IntroCont>
       </MainCont>
       

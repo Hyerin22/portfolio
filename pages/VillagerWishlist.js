@@ -9,7 +9,7 @@ import BodyText from '../comps/BodyText';
 import Button from '../comps/Button';
 import SubText from '../comps/SubText';
 import IntroBodyText from '../comps/IntroBodyText';
-import DownloadButton from '../comps/DownloadButton';
+import WithoutLogoButton from '../comps/WithoutLogoButton';
 import TopNav from '../comps/TopNav';
 
 const Cont = styled(motion.div)`
@@ -205,7 +205,7 @@ export default function VillagerWishlist() {
             text='Backend'
             href='https://github.com/Hyerin22/villager-wishlist-backend-1'
             />
-            <DownloadButton 
+            <WithoutLogoButton 
               marginLeft='13px' 
               text='Go Live' 
               href='https://acnh-villagerwishlist.vercel.app/'

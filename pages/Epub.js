@@ -9,7 +9,7 @@ import BodyText from '../comps/BodyText';
 import SubText from '../comps/SubText';
 import IntroBodyText from '../comps/IntroBodyText';
 import Button from '../comps/Button';
-import DownloadButton from '../comps/DownloadButton';
+import WithoutLogoButton from '../comps/WithoutLogoButton';
 import TopNav from '../comps/TopNav';
 
 const Cont = styled(motion.div)`
@@ -188,7 +188,7 @@ export default function Epub() {
             paddingR="0px"
             marginB="15px"
           />
-          {/* <DownloadButton href='https:/'  text='Download'/> */}
+          {/* <WithoutLogoButton href='https:/'  text='Download'/> */}
         </IntroCont>
       </MainCont>
       

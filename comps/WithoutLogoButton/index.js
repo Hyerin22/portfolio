@@ -53,7 +53,7 @@ const Link = styled.p`
 
 
 
-const DownloadButton = ({
+const WithoutLogoButton = ({
   routeTo ="/",
   text="GitHub Link",
   marginLeft ="0",
@@ -78,4 +78,4 @@ const DownloadButton = ({
   );
 }
 
-export default DownloadButton;
+export default WithoutLogoButton;

@@ -9,7 +9,7 @@ import BodyText from '../comps/BodyText';
 import Button from '../comps/Button';
 import SubText from '../comps/SubText';
 import IntroBodyText from '../comps/IntroBodyText';
-import DownloadButton from '../comps/DownloadButton';
+import WithoutLogoButton from '../comps/WithoutLogoButton';
 import TopNav from '../comps/TopNav';
 
 const Cont = styled(motion.div)`
@@ -196,7 +196,7 @@ export default function Wecycle() {
             <Button 
               routeTo='https://github.com/Hyerin22/myLandlord' 
               href='https://github.com/Hyerin22/myLandlord'/>
-            <DownloadButton 
+            <WithoutLogoButton 
               marginLeft='15px' 
               text='Go Live' 
               routeTo='https://mylandlord.hyerincheon.ca/'
