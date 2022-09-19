@@ -159,7 +159,7 @@ export default function Wecycle() {
           <IntroHeader className='intro_header'>WeCycle</IntroHeader>
           <IntroSub className='intro_sub'>Recycling Education Web Application</IntroSub>
           <IntroBodyText 
-            text = "Wecycle is an education app for children, their parents, and teachers. Through this app, children can learn how to recycle with interactive animations and quizzes."
+            text = "WeCycle is an educational app developed with 3 other team members for children, parents, and teachers. Through this app, children can learn how to recycle with interactive animations and quizzes."
             marginB = "50px"
           />
           <IntroBodyText 

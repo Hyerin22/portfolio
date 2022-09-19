@@ -159,7 +159,7 @@ export default function VillagerWishlist() {
           <IntroHeader className='intro_header'>Villager Wishlist</IntroHeader>
           <IntroSub className='intro_sub'>Wishlist Application</IntroSub>
           <IntroBodyText 
-            text = "VillagerWishlist is an app for Animal Crossing players that allows them to add villagers they want to invite to their island and know their information."
+            text = "VillagerWishlist was a team project with 6 members. It is an app for Animal Crossing players that allows them to add villagers they want to invite to their island and know their information."
             marginB = "50px"
           />
           <IntroBodyText 

@@ -156,7 +156,7 @@ export default function Wecycle() {
           <IntroHeader className='intro_header'>MyLandlord</IntroHeader>
           <IntroSub className='intro_sub'>Landlord Review Website</IntroSub>
           <IntroBodyText 
-            text = "MyLandlord is a website that is targeted towards residents looking to find an ideal Landlord to rent from in Greater Vancouver."
+            text = "MyLandlord was implemented with a team of 6 people. It is a web application that is targeted towards tenants looking for ideal landlords who upload information about themselves on our website."
             marginB = "50px"
           />
           <IntroBodyText 
@@ -216,7 +216,7 @@ export default function Wecycle() {
           <SubText text="Introduction" marginL="0"/>
           <BodyText 
             marginB='0'
-            text = "MyLandlords&#39; goal is to be able to help make it easier for residents in Greater Vancouver to find rent by looking for an ideal landlord. With our application, tenants and landlords will be able to communicate with each other and it will allow for tenants to leave honest reviews during their time with the landlord to help other prospective renters." 
+            text = "MyLandlords&#39; goal is to be able to help make it easier for tenants in Greater Vancouver to find rent by looking for an ideal landlord. With our application, tenants and landlords will be able to communicate with each other and it will allow tenants to leave honest reviews on existing landlords' profiles during their time with the landlord to help other prospective renters." 
           />
         </SectionCont>
 

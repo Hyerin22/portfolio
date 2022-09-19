@@ -150,7 +150,7 @@ export default function Wecycle() {
         <IntroHeader className='intro_header'>Budding Writer</IntroHeader>
           <IntroSub className='intro_sub'>Book Cafe Website</IntroSub>
           <IntroBodyText 
-            text = "Budding writer is a book cafe website that includes information on the cafe's menu and various events."
+            text = "This project was a team project with two other members. Budding writer is a book cafe website that includes information on the cafe's menu and various events."
             marginB = "50px"
           />
           <IntroBodyText 

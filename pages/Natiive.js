@@ -129,12 +129,12 @@ export default function Wecycle() {
         <HeroCont>
           <HeroImg src="/natiiveProj.svg" />
         </HeroCont>
-         
+        
         <IntroCont className='container'>
           <IntroHeader className='intro_header'>Natiive</IntroHeader>
           <IntroSub className='intro_sub'>Indigenous Territory Education Web Applicatioin</IntroSub>
           <IntroBodyText 
-            text = "Natiive is a responsive web application. Through this application, people can learn about the indigenous people and their territory with articles and quizzes."
+            text = "Natiive is a responsive web application that created with 3 other people. Through this application, people can learn about the indigenous people and their territory with articles and quizzes."
             marginB = "50px"
           />
           <IntroBodyText 
@@ -177,8 +177,8 @@ export default function Wecycle() {
             <WithoutLogoButton 
               marginLeft='13px' 
               text='Go Live' 
-              href='https://natiive.vercel.app/'
-              routeTo='https://natiive.vercel.app/'
+              href='https://natiive.hyerincheon.ca/'
+              routeTo='https://natiive.hyerincheon.ca/'
               bgColor='none'
               butBorder='3px solid #2B6FC7'
               fColor='#2B6FC7'
