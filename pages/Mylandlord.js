@@ -273,6 +273,11 @@ export default function Wecycle() {
           <SubText text="Challenges" marginL="0"/>
           <BodyText 
             text = "This project was my first time collaborating with backend developers. Both teams had different ways and coding styles, making it difficult to work together. However, in this project, I learned how important it is to communicate and check the progress of the team members. Through constant communication, the gap between differences could be reduced." 
+            marginB='20px'
+          />
+
+          <BodyText 
+            text = "After the project, I was eager to make this website responsive. As I added codes for it, I could understand other people's codes better and learn how to implement some of the layouts differently. Finally, I completed a responsive website by realizing which code is a more efficient and better way." 
           />
         </BottContentCont>
         <Footer />

@@ -123,5 +123,5 @@ export default function TermsOfUse() {
       </ContentCont>
       <Footer />
     </Cont>
-  )
+  ) 
 }
