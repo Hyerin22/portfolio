@@ -169,7 +169,7 @@ export default function VillagerWishlist() {
             marginB = "0px"
           />
           <IntroBodyText
-            text="Front-end/Back-end Developer, UX/UI Designer"
+            text="Full-stack Developer, UX/UI Designer"
             paddingR="0px"
             marginB="15px"
           />

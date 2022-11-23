@@ -190,7 +190,7 @@ export default function About() {
         <SectionCont >
           <ContentContGrid className='about_prof_grid container'>
             <ImgCont>
-              <ProfileImg src='rin_profile.svg' />
+              <ProfileImg src='rin_profile.jpeg' />
             </ImgCont>
             <RightCont>
               <Header
