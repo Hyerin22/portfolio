@@ -1,41 +1,18 @@
-import React, {useState} from 'react'
-import styled from 'styled-components';
-import {useRouter} from 'next/router';
+import React, { useState } from "react";
+import styled from "styled-components";
+import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 
-import Projects from '../comps/Projects';
-import Footer from '../comps/Footer';
-import Header from '../comps/Header';
-import TopNav from '../comps/TopNav';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
-
+import Projects from "../comps/Projects";
+import Footer from "../comps/Footer";
+import TopNav from "../comps/TopNav";
 
 const Cont = styled(motion.div)`
-  display:flex;
+  display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
-  justify-content:center;
-`;
-const NavCont = styled.div`
-  display: flex;
-  padding-left:3%;
-  flex-direction: row;
-  box-sizing: border-box;
-`;
-
-const LogoCont = styled.div`
-  display:flex;
-  flex-direction: row;
-  flex: 1;
-  align-items: center;
-  justify-content:space-between;
-  cursor: pointer;
-`
-const Logo = styled.img`
-  width: auto;
+  justify-content: center;
 `;
 
 const HeroCont = styled.div`
@@ -44,26 +21,21 @@ const HeroCont = styled.div`
   align-items: center;
   // margin-top: 55px;
   flex-direction: column;
-  // margin-bottom: 60px;
-  
 
-  @media (min-width: 768px){
+  @media (min-width: 768px) {
     height: 350px;
   }
-  @media (min-width: 992px){
+  @media (min-width: 992px) {
     height: 350px;
   }
-
-`; 
-
+`;
 
 const HeroImg = styled.img`
-@media (min-width:481px) and (max-width: 991px){
-  width:50%;
-}
+  @media (min-width: 481px) and (max-width: 991px) {
+    width: 50%;
+  }
 `;
-const BottCont = styled.div`
-`;
+const BottCont = styled.div``;
 
 const ProjCont = styled.div`
   justify-content: center;
@@ -71,11 +43,12 @@ const ProjCont = styled.div`
 
 export default function WebMobile() {
   const router = useRouter();
-    
+
   return (
     <Cont
-      initial={{opacity: 0}} 
-      animate={{opacity: 1, transition:{delay: 0.5}}}>
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { delay: 0.5 } }}
+    >
       {/* TopNav */}
       <TopNav />
 
@@ -84,67 +57,52 @@ export default function WebMobile() {
       {/* HeroImage */}
       <HeroCont>
         <HeroImg className="page_hero" src="/WebMobile3.svg" />
-        {/* <IconCont className='scroll_big_screen' href="#go-down">
-          <FontAwesomeIcon 
-            className="arrow_scale arrow" 
-            icon={faChevronDown} 
-            size="2x" 
-            color="#2B6FC7"
-            width={20}
-            />
-        </IconCont> */}
-        {/* <Header 
-        text='Projects' 
-        marginT='10px'
-        /> */}
       </HeroCont>
 
       {/* Contents */}
       <BottCont className="container">
-
         {/* Projects here */}
-        <ProjCont className="three-grid"> 
+        <ProjCont className="three-grid">
+          <Projects
+            routeTo="/Rinflix"
+            src="/rinflix.svg"
+            projName="Rinflix"
+            projDesc="Movie Website - Web Applicatioin"
+          />
 
+          <Projects
+            routeTo="/VillagerWishlist"
+            src="/wishlist.svg"
+            projName="Villager Wishlist"
+            projDesc="Wishlist Application - Web Applicatioin"
+          />
 
-        <Projects
-          routeTo='/VillagerWishlist'
-          src="/wishlist.svg" 
-          projName="Villager Wishlist"
-          projDesc="Wishlist Application - Web Applicatioin"
-        />
+          <Projects
+            routeTo="/Mylandlord"
+            src="/mylandlord2.svg"
+            projName="MyLandlord"
+            projDesc="Landlord Review - Website"
+          />
 
-        <Projects
-          routeTo='/Mylandlord'
-          src="/mylandlord2.svg" 
-          projName="MyLandlord"
-          projDesc="Landlord Review - Website"
-        />
+          <Projects routeTo="/Wecycle" src="/wecycle2.svg" />
 
-        <Projects
-          routeTo='/Wecycle'
-          src='/wecycle2.svg'
-        />
-        
-        <Projects
-          routeTo='/BuddingWriters'
-          src="/buddingWriters2.svg" 
-          projName="Budding Writers"
-          projDesc="Book Cafe - Website"
-        />
+          <Projects
+            routeTo="/BuddingWriters"
+            src="/buddingWriters2.svg"
+            projName="Budding Writers"
+            projDesc="Book Cafe - Website"
+          />
 
-        <Projects
-          routeTo='/Natiive'
-          src="/natiive2.svg" 
-          projName="Natiive"
-          projDesc="Indigenous Territory Education - Web Applicatioin
+          <Projects
+            routeTo="/Natiive"
+            src="/natiive2.svg"
+            projName="Natiive"
+            projDesc="Indigenous Territory Education - Web Applicatioin
           "
-        />
-
-
-
+          />
         </ProjCont>
       </BottCont>
       <Footer />
     </Cont>
-  )     
+  );
 }
