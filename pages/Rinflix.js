@@ -84,7 +84,6 @@ const BottContentCont = styled.div`
 `;
 const ContentContGrid = styled.div`
   justify-content: center;
-  align-items: center;
 `;
 const RightCont = styled.div`
   justify-content: center;
@@ -127,7 +126,7 @@ export default function Rinflix() {
           <IntroHeader className="intro_header">Rinflix</IntroHeader>
           <IntroSub className="intro_sub">Movie Website</IntroSub>
           <IntroBodyText
-            text="Rinflix is a movie website inspired by Netflix. It allows users to get movie information."
+            text="Rinflix is a personal project website inspired by Netflix. It allows users to get movie information."
             marginB="50px"
           />
           <IntroBodyText
