@@ -9,6 +9,7 @@ import SubText from "../comps/SubText";
 import IntroBodyText from "../comps/IntroBodyText";
 import WithoutLogoButton from "../comps/WithoutLogoButton";
 import TopNav from "../comps/TopNav";
+import { faFigma } from "@fortawesome/free-brands-svg-icons";
 
 const Cont = styled(motion.div)`
   display: flex;
@@ -163,7 +164,15 @@ export default function Rinflix() {
             marginB="15px"
           />
           <ButtonCont>
-            <Button href="https://github.com/Hyerin22/reactMovieWeb" />
+            <Button
+              href="https://github.com/Hyerin22/reactMovieWeb"
+              marginR="10px"
+            />
+            <Button
+              text="Figma"
+              icon={faFigma}
+              href="https://www.figma.com/file/Bxg5U4t0CocDjvlltdQT4j/react-movie-web?node-id=0%3A1&t=bmHmT2pzQWGzBGCJ-1"
+            />
             <WithoutLogoButton
               marginLeft="13px"
               text="Go Live"
