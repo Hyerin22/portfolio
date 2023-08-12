@@ -180,16 +180,16 @@ export default function Home() {
         {/* Projects here */}
         <ProjCont className="grid">
           <ProjectsHome
+            routeTo="/MyZERO"
+            src="/myZero.svg"
+            projName="MyZERO"
+            projDesc="Eco Rewards Web App"
+          />
+          <ProjectsHome
             routeTo="/Rinflix"
             src="/rinflix.svg"
             projName="Rinflix"
-            projDesc="Movie Website - Web Application"
-          />
-          <ProjectsHome
-            routeTo="/VillagerWishlist"
-            src="/wishlist.svg"
-            projName="Villager Wishlist"
-            projDesc="Wishlist Application - Web Applicatioin"
+            projDesc="Movie Website"
           />
         </ProjCont>
         <div style={{ position: "relative" }}>

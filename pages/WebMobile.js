@@ -64,6 +64,13 @@ export default function WebMobile() {
         {/* Projects here */}
         <ProjCont className="three-grid">
           <Projects
+            routeTo="/MyZERO"
+            src="/myZero.svg"
+            projName="MyZERO"
+            projDesc="Eco Rewards Web App"
+          />
+
+          <Projects
             routeTo="/Rinflix"
             src="/rinflix.svg"
             projName="Rinflix"
